@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author ddh
  * @date 2019/8/1 10:55
- * @description
+ * @description 异步
  **/
 @RestController
 public class AsynController {

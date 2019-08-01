@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 /**
  * @author ddh
  * @date 2019/8/1 10:53
- * @description
+ * @description 异步
  **/
 //异步方法
 @Async
