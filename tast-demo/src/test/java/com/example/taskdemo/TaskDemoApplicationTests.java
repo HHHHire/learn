@@ -5,17 +5,18 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.mail.javamail.MimeMailMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-@RunWith(SpringRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class TaskDemoApplicationTests {
 
@@ -33,11 +34,20 @@ public class TaskDemoApplicationTests {
         simpleMailMessage.setTo("dengdh167@163.com");
         simpleMailMessage.setFrom("1670360527@qq.com");
 
-        /*for (int i = 0; i < 20; i++){
-            javaMailSender.send(simpleMailMessage);
-            System.out.println(i);
-        }*/
+        ExecutorService exec = Executors.newCachedThreadPool();
         javaMailSender.send(simpleMailMessage);
+
+
+//        System.out.println("send message");
+//        exec.execute(() -> {
+//            System.out.println("start send");
+//            for (int i = 0; i < 100; i++) {
+//            }
+//            System.out.println("end send");
+//        });
+//        if (!exec.isShutdown()) {
+//            exec.shutdown();
+//        }
     }
 
     /**
@@ -55,7 +65,7 @@ public class TaskDemoApplicationTests {
         mimeMessageHelper.setTo("dengdh167@163.com");
         mimeMessageHelper.setFrom("1670360527@qq.com");
 
-        mimeMessageHelper.addAttachment("image.png",new File("D:\\ChromeCoreDownloads\\20180710155531286.png"));
+        mimeMessageHelper.addAttachment("image.png", new File("D:\\ChromeCoreDownloads\\20180710155531286.png"));
         javaMailSender.send(mimeMailMessage);
     }
 
