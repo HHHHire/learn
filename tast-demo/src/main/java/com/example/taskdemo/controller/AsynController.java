@@ -17,10 +17,8 @@ public class AsynController {
     @Autowired
     AsynService asynService;
 
-    //这是一个异步方法
-    @Async
     @GetMapping("/hello")
-    public String hello(){  
+    public String hello(){
         asynService.hello();
         return "success";
     }

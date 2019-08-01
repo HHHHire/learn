@@ -1,5 +1,6 @@
 package com.example.taskdemo.service;
 
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 /**
@@ -7,6 +8,8 @@ import org.springframework.stereotype.Service;
  * @date 2019/8/1 10:53
  * @description
  **/
+//异步方法
+@Async
 @Service
 public class AsynService {
 
