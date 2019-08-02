@@ -1,5 +1,3 @@
-import org.junit.Test;
-
 /**
  * @author ddh
  * @date 2019/8/2 11:42
@@ -7,9 +5,24 @@ import org.junit.Test;
  **/
 public class LazyDemo {
 
-
-    @Test
-    public void test01(){
-
+    private LazyDemo() {
     }
+
+    private static LazyDemo lazyDemo = null;
+
+    /**
+     * 静态工厂方法
+     * @return LazyDemo
+     */
+    public static LazyDemo getInstance() {
+        if (lazyDemo == null){
+            lazyDemo = new LazyDemo();
+        }
+        return lazyDemo;
+    }
+
+    /*@Test
+    public void test01() {
+
+    }*/
 }
