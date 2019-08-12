@@ -1,6 +1,7 @@
 package test;
 
 import singleton.hungry.SingletonHungry;
+import singleton.lazy.SingletonLazy;
 
 /**
  * @author ddh
@@ -9,9 +10,9 @@ import singleton.hungry.SingletonHungry;
  **/
 public class Test {
     public static void main(String[] args) {
-        System.out.println(SingletonHungry.getInstance());
-        System.out.println(SingletonHungry.getInstance());
-        System.out.println(SingletonHungry.getInstance());
-        System.out.println(SingletonHungry.getInstance());
+        System.out.println(SingletonLazy.getInstance());
+        System.out.println(SingletonLazy.getInstance());
+        System.out.println(SingletonLazy.getInstance());
+        System.out.println(SingletonLazy.getInstance());
     }
 }
