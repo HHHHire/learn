@@ -6,4 +6,13 @@ package builder.demo1;
  * @description
  **/
 public class Test {
+    public static void main(String[] args) {
+        Student sex = new Student.Builder()
+                .id(1)
+                .address("zhejiang")
+                .door(12)
+                .name("zhangsan")
+                .sex(1).build();
+        System.out.println(sex.toString());
+    }
 }

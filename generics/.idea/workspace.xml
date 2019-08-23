@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04742839-87fe-4f8b-8a41-1a9a9214c9dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/relex/generic_relex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/relex/relex_annotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/generics-relex.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/GenericEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/GenericEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/GenericInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/GenericInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/GenericTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/GenericsMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/GenericsMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Maximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/Maximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generic/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Box.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/GenericEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/GenericInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/GenericTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/GenericsMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/InterImpl1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Maximum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo2/generic_relex$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo2/generic_relex$B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo2/generic_relex$C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/generics/demo2/generic_relex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/relex/relex_annotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/relex/relex_annotation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,48 +38,65 @@
     <session id="-1401733884">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="13" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="13" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2133" />
+          <entry key="java" value="2565" />
           <entry key="md" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2133" />
+          <entry key="JAVA" value="2565" />
           <entry key="Markdown" value="112" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/relex/relex_annotation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="725">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/relex/generic_relex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +180,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,7 +190,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566395594098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566543180051" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -181,35 +207,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.generic_relex.test">
+  <component name="RunManager" selected="JUnit.relex_annotation.test1">
     <configuration name="GenericEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generic.GenericEx" />
-      <module name="generics-relex" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenericInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generic.GenericInterface" />
-      <module name="generics-relex" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generic.Test" />
       <module name="generics-relex" />
       <extension name="coverage">
         <pattern>
@@ -250,67 +250,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration name="relex_annotation.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics-relex" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="relex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="relex" />
+      <option name="MAIN_CLASS_NAME" value="relex.relex_annotation" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration name="relex_annotation.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics-relex" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="relex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="relex" />
+      <option name="MAIN_CLASS_NAME" value="relex.relex_annotation" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.GenericInterface" />
       <item itemvalue="Application.GenericEx" />
       <item itemvalue="Application.generic_relex" />
       <item itemvalue="JUnit.generic_relex.test" />
+      <item itemvalue="JUnit.relex_annotation.test" />
+      <item itemvalue="JUnit.relex_annotation.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.relex_annotation.test1" />
+        <item itemvalue="JUnit.relex_annotation.test" />
         <item itemvalue="JUnit.generic_relex.test" />
         <item itemvalue="Application.generic_relex" />
         <item itemvalue="Application.GenericEx" />
-        <item itemvalue="Application.GenericInterface" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +314,9 @@
       <workItem from="1566305893380" duration="1779000" />
       <workItem from="1566350684699" duration="56000" />
       <workItem from="1566354940893" duration="6860000" />
-      <workItem from="1566393463410" duration="1914000" />
+      <workItem from="1566393463410" duration="2200000" />
+      <workItem from="1566524359026" duration="4437000" />
+      <workItem from="1566551649646" duration="432000" />
     </task>
     <servers />
   </component>
@@ -349,15 +336,21 @@
     <history-entry file="generic_relex_test - 2019.08.21 at 21h 39m 16s.xml">
       <configuration name="generic_relex.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="relex_annotation_test - 2019.08.23 at 10h 36m 38s.xml">
+      <configuration name="relex_annotation.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="relex_annotation_test1 - 2019.08.23 at 10h 40m 13s.xml">
+      <configuration name="relex_annotation.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18235000" />
+    <option name="totallyTimeSpent" value="23390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,7 +359,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19761129" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19761129" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,22 +498,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/relex/generic_relex.java">
+    <entry file="file://$PROJECT_DIR$/src/relex/relex_annotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="725">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/relex/relex_annotation.java">
+    <entry file="file://$PROJECT_DIR$/src/relex/generic_relex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

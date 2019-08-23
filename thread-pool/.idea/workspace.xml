@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb2d8273-600a-4db2-be67-c3ce9ec86330" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../generics/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/learn/Demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Box.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericsMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Inter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/InterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/InterImpl1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Maximum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generics/src/relex/relex_annotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/src/relex/relex_annotation.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-926589068">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1241" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1241" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/learn/Demo1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/learn/Demo2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61">
+              <caret line="318" column="55" lean-forward="true" selection-start-line="318" selection-start-column="55" selection-end-line="318" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/AbstractExecutorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ExecutorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="136" column="32" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/Executor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/learn/Demo1.java" />
+        <option value="$PROJECT_DIR$/src/learn/Demo2.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\BaiduNetdiskDownload\apache-maven-3.6.1-bin\apache-maven-3.6.1\repository" />
+        <option name="mavenHome" value="D:/BaiduNetdiskDownload/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\BaiduNetdiskDownload\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Ali-Check</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AlibabaThreadShouldSetName</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="thread-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thread-pool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thread-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thread-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thread-pool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thread-pool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566563026817" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Demo1.threadPoolExecutorTest2">
+    <configuration name="Demo1.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thread-pool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn" />
+      <option name="MAIN_CLASS_NAME" value="learn.Demo1" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo1.threadPoolExecutorTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thread-pool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn" />
+      <option name="MAIN_CLASS_NAME" value="learn.Demo1" />
+      <option name="METHOD_NAME" value="threadPoolExecutorTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo1.threadPoolExecutorTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thread-pool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn" />
+      <option name="MAIN_CLASS_NAME" value="learn.Demo1" />
+      <option name="METHOD_NAME" value="threadPoolExecutorTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Demo1.test01" />
+      <item itemvalue="JUnit.Demo1.threadPoolExecutorTest1" />
+      <item itemvalue="JUnit.Demo1.threadPoolExecutorTest2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Demo1.threadPoolExecutorTest2" />
+        <item itemvalue="JUnit.Demo1.threadPoolExecutorTest1" />
+        <item itemvalue="JUnit.Demo1.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb2d8273-600a-4db2-be67-c3ce9ec86330" name="Default Changelist" comment="" />
+      <created>1566552210967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566552210967</updated>
+      <workItem from="1566552212562" duration="7194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Demo1_test01 - 2019.08.23 at 17h 38m 21s.xml">
+      <configuration name="Demo1.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Demo1_threadPoolExecutorTest1 - 2019.08.23 at 18h 18m 07s.xml">
+      <configuration name="Demo1.threadPoolExecutorTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Demo1_threadPoolExecutorTest1 - 2019.08.23 at 18h 18m 35s.xml">
+      <configuration name="Demo1.threadPoolExecutorTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Demo1_threadPoolExecutorTest1 - 2019.08.23 at 18h 20m 34s.xml">
+      <configuration name="Demo1.threadPoolExecutorTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Demo1_threadPoolExecutorTest2 - 2019.08.23 at 19h 30m 37s.xml">
+      <configuration name="Demo1.threadPoolExecutorTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Demo1_threadPoolExecutorTest2 - 2019.08.23 at 19h 31m 44s.xml">
+      <configuration name="Demo1.threadPoolExecutorTest2" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7194000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10341151" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.72638434" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="136" column="32" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="318" column="55" lean-forward="true" selection-start-line="318" selection-start-column="55" selection-end-line="318" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/learn/Demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/learn/Demo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>thread-pool</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
