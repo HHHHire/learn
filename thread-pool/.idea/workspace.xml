@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2d8273-600a-4db2-be67-c3ce9ec86330" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../generics/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/learn/Demo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericEx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/GenericsMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Inter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/InterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/InterImpl1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Maximum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex$C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/out/production/generics/demo2/generic_relex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../generics/src/relex/relex_annotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../generics/src/relex/relex_annotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/learn/Demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/learn/Demo2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1241" />
+          <entry key="java" value="1292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1241" />
+          <entry key="JAVA" value="1292" />
         </counts>
       </usages-collector>
     </session>
@@ -84,8 +59,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/learn/Demo2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="343">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +141,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -224,7 +204,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566563026817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566563383023" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -244,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Demo1.threadPoolExecutorTest2">
+  <component name="RunManager" selected="JUnit.Demo2.test01">
     <configuration name="Demo1.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thread-pool" />
       <extension name="coverage">
@@ -293,13 +273,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo2.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thread-pool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn" />
+      <option name="MAIN_CLASS_NAME" value="learn.Demo2" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Demo1.test01" />
       <item itemvalue="JUnit.Demo1.threadPoolExecutorTest1" />
       <item itemvalue="JUnit.Demo1.threadPoolExecutorTest2" />
+      <item itemvalue="JUnit.Demo2.test01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo2.test01" />
         <item itemvalue="JUnit.Demo1.threadPoolExecutorTest2" />
         <item itemvalue="JUnit.Demo1.threadPoolExecutorTest1" />
         <item itemvalue="JUnit.Demo1.test01" />
@@ -316,7 +314,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566552210967</updated>
-      <workItem from="1566552212562" duration="7194000" />
+      <workItem from="1566552212562" duration="7442000" />
     </task>
     <servers />
   </component>
@@ -341,7 +339,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7194000" />
+    <option name="totallyTimeSpent" value="7442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -352,12 +350,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10341151" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10341151" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -424,8 +422,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/learn/Demo2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="343">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
