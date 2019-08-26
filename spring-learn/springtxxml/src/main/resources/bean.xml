@@ -34,7 +34,16 @@
     </bean>
 
     <!--配置事务的通知-->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager"></tx:advice>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" read-only="false"/>
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
 
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* com.itheima.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"/>
+    </aop:config>
 
 </beans>
