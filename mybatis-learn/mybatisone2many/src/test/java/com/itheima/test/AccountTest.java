@@ -1,6 +1,8 @@
 package com.itheima.test;
 
-import com.itheima.dao.IUserDao;
+import com.itheima.dao.IAccountDao;
+import com.itheima.dao.IAccountDao;
+import com.itheima.domain.Account;
 import com.itheima.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,7 +13,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,11 +21,11 @@ import java.util.List;
  *
  * 测试mybatis的crud操作
  */
-public class MybatisTest {
+public class AccountTest {
 
     private InputStream in;
     private SqlSession sqlSession;
-    private IUserDao userDao;
+    private IAccountDao accountDao;
 
     @Before//用于在测试方法执行之前执行
     public void init()throws Exception{
@@ -35,7 +36,7 @@ public class MybatisTest {
         //3.获取SqlSession对象
         sqlSession = factory.openSession(true);
         //4.获取dao的代理对象
-        userDao = sqlSession.getMapper(IUserDao.class);
+        accountDao = sqlSession.getMapper(IAccountDao.class);
     }
 
     @After//用于在测试方法执行之后执行
@@ -53,8 +54,8 @@ public class MybatisTest {
     @Test
     public void testFindAll(){
         //5.执行查询所有方法
-        List<User> users = userDao.findAll();
-        for(User user : users){
+        List<Account> accounts = accountDao.findAll();
+        for(Account user : accounts){
             System.out.println(user);
         }
     }
