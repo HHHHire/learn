@@ -6,14 +6,14 @@ public class Account implements Serializable {
     private Integer id;
     private Integer uid;
     private Double money;
+    private User user;
 
-    @Override
-    public String toString() {
-        return "Account{" +
-                "id=" + id +
-                ", uid=" + uid +
-                ", money=" + money +
-                '}';
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Integer getId() {
@@ -38,5 +38,15 @@ public class Account implements Serializable {
 
     public void setMoney(Double money) {
         this.money = money;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", uid=" + uid +
+                ", money=" + money +
+                ", user=" + user +
+                '}';
     }
 }
