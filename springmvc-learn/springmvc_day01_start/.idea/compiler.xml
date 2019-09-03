@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fileuploadserver" />
         <module name="springmvc_day01_start" />
+        <module name="springmvc_interceptor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springmvc_fileupload" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
