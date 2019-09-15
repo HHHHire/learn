@@ -3,24 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-    <!--ActiveMQ为我们提供的ConnectionFactory-->
-    <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
-        <property name="brokerURL" value="tcp://192.168.0.107:61616"/>
-    </bean>
 
-    <!--Spring jms 为我们提供连接池-->
-    <bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
-        <property name="targetConnectionFactory" ref="targetConnectionFactory"/>
-    </bean>
-
-    <!--队列目的地，点对点-->
-    <bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
-        <constructor-arg value="queue"/>
-    </bean>
-
+    <import resource="common.xml"/>
     <bean id="jsmTemplate" class="org.springframework.jms.core.JmsTemplate">
         <property name="connectionFactory" ref="connectionFactory"/>
     </bean>
 
-    <context:annotation-config/>
+    <bean id="producerService" class="cn.etu.jxust.jms.producer.impl.ProducerServiceImpl"/>
 </beans>
