@@ -11,7 +11,7 @@ import javax.jms.*;
  */
 public class AppConsumer {
     private static final String url = "tcp://192.168.0.107:61616";
-    private static final String queueName = "queue-test";
+    private static final String topicName = "topic-test";
 
     public static void main(String[] args) throws JMSException {
         // 创建connectionFactory
@@ -22,8 +22,8 @@ public class AppConsumer {
         connection.start();
         // 创建会话
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        // 创建一个目标
-        Destination destination = session.createQueue(queueName);
+        // 创建一个目标(主题模式)
+        Destination destination = session.createTopic(topicName);
         // 创建一个消费者
         MessageConsumer consumer = session.createConsumer(destination);
         // 创建一个监听器

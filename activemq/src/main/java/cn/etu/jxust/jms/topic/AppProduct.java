@@ -7,11 +7,11 @@ import javax.jms.*;
 /**
  * @Author: ddh
  * @Date: 2019/9/15 18:01
- * @Description:
+ * @Description: 主题模式 需要先让消费者开启订阅，才能收到消息
  */
 public class AppProduct {
     private static final String url = "tcp://192.168.0.107:61616";
-    private static final String queueName = "topic-test";
+    private static final String topicName = "topic-test";
 
     public static void main(String[] args) throws JMSException {
         // 创建connectionFactory
@@ -22,8 +22,8 @@ public class AppProduct {
         connection.start();
         // 创建会话
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        // 创建一个目标
-        Destination destination = session.createQueue(queueName);
+        // 创建一个目标 (主题模式)
+        Destination destination = session.createTopic(topicName);
         // 创建一个生产者
         MessageProducer producer = session.createProducer(destination);
 
