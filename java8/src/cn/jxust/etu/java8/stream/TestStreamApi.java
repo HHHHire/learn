@@ -33,7 +33,7 @@ public class TestStreamApi {
         Stream<String> stream2 = Stream.of("aa", "bb", "cc");
 
         // 4. 创建无限流
-        // 迭代
+        // 迭代 stream3.forEach 即是终止操作
         Stream<Integer> stream3 = Stream.iterate(0, (x) -> x + 2);
         stream3.limit(10).forEach(System.out::println);
 
