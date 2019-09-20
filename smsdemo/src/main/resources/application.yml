@@ -1,0 +1,7 @@
+sms:
+  accessId: 填自己真实的配置
+  accessKey: 填自己真实的配置
+  signName: 填自己真实的配置
+  codeTemplate: 填自己真实的配置
+  product: Dysmsapi
+  domain: dysmsapi.aliyuncs.com
