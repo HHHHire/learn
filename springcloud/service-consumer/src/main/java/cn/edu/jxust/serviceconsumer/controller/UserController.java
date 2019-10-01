@@ -22,14 +22,14 @@ public class UserController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @Autowired
-    private DiscoveryClient discoveryClient;
+//    @Autowired
+//    private DiscoveryClient discoveryClient;
 
     @GetMapping
     @ResponseBody
     public User queryUserById(@RequestParam("id") Long id) {
-        List<ServiceInstance> instances = discoveryClient.getInstances("service-provider");
-        ServiceInstance instance = instances.get(0);
-        return this.restTemplate.getForObject("http://" + instance.getHost() + ":" + instance.getPort() + "/user/" + id, User.class);
+        /*List<ServiceInstance> instances = discoveryClient.getInstances("service-provider");
+        ServiceInstance instance = instances.get(0);*/
+        return this.restTemplate.getForObject("http://service-provider/user/" + id, User.class);
     }
 }
