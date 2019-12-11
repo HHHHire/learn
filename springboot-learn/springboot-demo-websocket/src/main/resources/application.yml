@@ -1,0 +1,14 @@
+
+server:
+  port: 8888
+
+spring:
+  devtools:
+    restart:
+      exclude:  static/**,public/**
+      enabled:  true
+  rabbitmq:
+    host: 47.100.88.162
+    port: 5672
+    username: guest
+    password: guest
