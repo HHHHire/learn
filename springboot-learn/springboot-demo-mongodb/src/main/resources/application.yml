@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://127.0.0.1:27017/learning
+      repositories:
+        type: auto
+      host: 127.0.0.1
+      port: 27017
+      database: learning
