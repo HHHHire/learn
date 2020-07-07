@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+    <!--全局配置-->
+    <configuration>
+        <stop-on-errors>true</stop-on-errors>
+        <!--日期格式-->
+        <date-format>MM/dd/yyyy HH:mm</date-format>
+        <!--true：缺省值，映射全部属性；false：只映射列出来的属性-->
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <mapping>
+        <class-a>com.ddh.learn.springbootdemodozer.model.User</class-a>
+        <class-b>com.ddh.learn.springbootdemodozer.model.Teacher</class-b>
+<!--        <field>-->
+<!--            <a>username</a>-->
+<!--            <b>teacherName</b>-->
+<!--        </field>-->
+    </mapping>
+</mappings>
