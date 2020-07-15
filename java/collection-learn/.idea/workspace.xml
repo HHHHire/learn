@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9553b1d6-084e-47b9-a350-09831cd7fa9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cglibproxy/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/23887.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/dictionaries/23887.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/META-INF/design-pttern.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/AbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/BlueColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/CircleShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/ColorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/FactorySelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/RedColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/ShapeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/abstracts/SquareShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/easy/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/easy/EasyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/easy/MacComputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/easy/ThinkPadComputer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/AFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/AProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/BFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/BProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/BaseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/factory/method/BaseProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/observer/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/observer/WechatSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/observer/WechatUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/cglib/CglibProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/cglib/Engineer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/demo1/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/demo1/ProxyImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/demo1/RealImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/jdk/MyInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/jdk/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/proxy/jdk/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/check/SingletonCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/container/SingletonCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/enumm/SingletonEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/lazy/SingletonLazySafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/stat/SingletonStatic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cglibproxy/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cglibproxy/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cglibproxy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cglibproxy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cglibproxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cglibproxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/out/production/collection/com/java/collection/iterator/IteratortTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/com/java/collection/iterator/IteratortTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/builder/demo1/Student$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/builder/demo1/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/builder/demo1/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/check/SingletonCheck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/hungry/SingletonHungry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/singleton/lazy/SingletonLazy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/out/production/design-pttern/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/builder/demo1/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/builder/demo1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/builder/demo1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/singleton/check/SingletonCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/singleton/hungry/SingletonHungry.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/hungry/SingletonHungry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/singleton/lazy/SingletonLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/singleton/lazy/SingletonLazy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../design-pttern/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../design-pttern/src/main/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/out/production/proxy/com/entity/ISinger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/out/production/proxy/com/entity/Singer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/out/production/proxy/com/jdk/JdkProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/cglib/CglibProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/cglib/ProxyFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/entity/Dancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/entity/ISinger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/entity/Singer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy/src/com/jdk/JdkProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../springboot-learn/springboot-demo-excel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../springboot-learn/springboot-demo-excel/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/TreeSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/AbstractSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Set.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1159">
+              <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Collection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="36" column="41" selection-start-line="32" selection-start-column="3" selection-end-line="36" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/lang/Iterable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Spliterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="290" column="42" selection-start-line="290" selection-start-column="42" selection-end-line="290" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1653">
+              <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/function/Consumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1938">
+              <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test1.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\apache-maven-3.6.1\repository" />
+        <option name="mavenHome" value="F:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="290" />
+    <option name="y" value="110" />
+    <option name="width" value="1300" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="collection-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="collection-learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="collection-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="collection-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="collection-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="collection-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="collection-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="collection-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9553b1d6-084e-47b9-a350-09831cd7fa9c" name="Default Changelist" comment="" />
+      <created>1594742052854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594742052854</updated>
+      <workItem from="1594742054136" duration="2173000" />
+      <workItem from="1594786696356" duration="54000" />
+      <workItem from="1594822987202" duration="257000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2484000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <layout>
+      <window_info id="Learn" order="0" sideWeight="0.5006321" side_tool="true" weight="0.16487935" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.4993679" visible="true" weight="0.16487935" />
+      <window_info id="Structure" order="5" sideWeight="0.4993679" weight="0.16487935" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32996207" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="leetcode" order="4" side_tool="true" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Mongo Explorer" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test3.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddh/learn/collection/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/AbstractSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="36" column="41" selection-start-line="32" selection-start-column="3" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Spliterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="290" column="42" selection-start-line="290" selection-start-column="42" selection-end-line="290" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>collection-learn</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
