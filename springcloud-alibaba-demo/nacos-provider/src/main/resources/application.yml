@@ -7,4 +7,9 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-
+# Springboot2.x为了安全，对actuator只开放了两个端口：health,info。这里打开所有的端口，但是在yml中*有特殊的含义，所以要加双引号
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

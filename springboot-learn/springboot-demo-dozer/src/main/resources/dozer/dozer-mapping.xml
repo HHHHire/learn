@@ -10,6 +10,12 @@
         <date-format>MM/dd/yyyy HH:mm</date-format>
         <!--true：缺省值，映射全部属性；false：只映射列出来的属性-->
         <wildcard>true</wildcard>
+        <custom-converters>
+            <converter type="com.ddh.learn.springbootdemodozer.dozer.custom.ManageTreeConver">
+                <class-a>com.ddh.learn.springbootdemodozer.model.custom.ManageNode</class-a>
+                <class-b>com.ddh.learn.springbootdemodozer.model.custom.TreeNode</class-b>
+            </converter>
+        </custom-converters>
     </configuration>
 
     <mapping>

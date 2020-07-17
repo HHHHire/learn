@@ -2,50 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d98f85c0-b12a-4ba1-a7f8-b14f976c7382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/dictionaries/23887.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter1/FirstThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/BankVersion2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/TicketWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/TicketWindowRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/design/CalculatorStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/design/SimpleCalculatorStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/design/TaxCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter2/design/TaxcalculatorMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter3/CreateThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter4/CreateThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/chapter4/ThreadJoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/high-concurrency-learn/src/main/java/com/ddh/learn/concurrency/thread/test/ThreadTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/SpringbootDemoPgsqlApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/dao/AuthorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/dao/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/model/dto/AuthorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/model/dto/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/service/AuthorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/test/java/com/ddh/learn/springbootdemopgsql/BookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/test/java/com/ddh/learn/springbootdemopgsql/SpringbootDemoPgsqlApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-demo-dozer/src/main/java/com/ddh/learn/springbootdemodozer/dozer/custom/ManageTreeConver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-demo-dozer/src/main/java/com/ddh/learn/springbootdemodozer/model/custom/ManageNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-demo-dozer/src/main/java/com/ddh/learn/springbootdemodozer/model/custom/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-demo-dozer/src/test/java/com/ddh/learn/springbootdemodozer/DozerEntityClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/collection-learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/collection-learn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/collection-learn/src/main/java/com/ddh/learn/collection/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/collection-learn/src/main/java/com/ddh/learn/collection/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-demo-dozer/src/main/resources/dozer/dozer-mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-demo-dozer/src/main/resources/dozer/dozer-mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/dao/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/dao/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/main/java/com/ddh/learn/springbootdemopgsql/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-demo-pgsql/src/test/java/com/ddh/learn/springbootdemopgsql/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-demo-pgsql/src/test/java/com/ddh/learn/springbootdemopgsql/BookTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provider-demo/src/main/java/com/ddh/learn/providerdemo/ProviderDemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2-sources.jar!/com/alibaba/dubbo/rpc/Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -179,6 +154,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,8 +336,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,14 +406,16 @@
       <workItem from="1593601019176" duration="12000" />
       <workItem from="1594619091304" duration="604000" />
       <workItem from="1594622942469" duration="6000" />
+      <workItem from="1594966043617" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31658000" />
+    <option name="totallyTimeSpent" value="32881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.117962465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -696,8 +673,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/provider-demo/src/main/java/com/ddh/learn/providerdemo/ProviderDemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2-sources.jar!/com/alibaba/dubbo/rpc/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>

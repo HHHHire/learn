@@ -63,4 +63,10 @@ public class BookTest {
         List<Book> books = bookService.findByConditions("白", 100);
         System.out.println(books);
     }
+
+    @Test
+    public void test4() {
+        Book book = bookService.searchBookById(1L);
+        System.out.println(book);
+    }
 }

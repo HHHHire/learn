@@ -24,6 +24,10 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
+    public Book searchBookById(Long bookId) {
+        return bookRepository.searchById(bookId);
+    }
+
     public Book createBook(BookDTO bookDTO) {
         Book build = Book.builder().title(bookDTO.getTitle())
                 .description(bookDTO.getDescription())
