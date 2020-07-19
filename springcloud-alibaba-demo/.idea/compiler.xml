@@ -6,15 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rocketmq-produce-example" />
+        <module name="nacos-config" />
         <module name="nacos-provider" />
+        <module name="rocketmq-consumer-example" />
+        <module name="sentinel-demo" />
+        <module name="rocketmq-demo" />
         <module name="nacos-consumer" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="nacos-config" options="-parameters" />
       <module name="nacos-consumer" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
+      <module name="rocketmq-consumer-example" options="-parameters" />
+      <module name="rocketmq-demo" options="-parameters" />
+      <module name="rocketmq-produce-example" options="-parameters" />
+      <module name="sentinel-demo" options="-parameters" />
     </option>
   </component>
 </project>

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/echo/{s}")
     public String test(@PathVariable String s) {
+        System.out.println(s);
         return "Hello Nacos Discovery " + s;
     }
+
 }
