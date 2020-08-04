@@ -23,6 +23,9 @@
         <module>nacos-config</module>
         <module>sentinel-demo</module>
         <module>rocketmq-demo</module>
+        <module>sentinel-example</module>
+        <module>nacos-example</module>
+        <module>nacos-example</module>
     </modules>
 
     <properties>
