@@ -1,5 +1,5 @@
 server:
-  port: 8083
-spring:
-  application:
-    name: nacos-config
+  port: 9018
+#spring:
+#  application:
+#    name: nacos-config
