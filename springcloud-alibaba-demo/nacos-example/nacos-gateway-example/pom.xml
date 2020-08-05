@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ddh.learn</groupId>
     <artifactId>nacos-gateway-example</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
