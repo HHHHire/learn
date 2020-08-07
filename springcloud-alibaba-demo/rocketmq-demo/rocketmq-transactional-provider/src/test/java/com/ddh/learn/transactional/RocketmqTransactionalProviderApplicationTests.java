@@ -1,10 +1,10 @@
-package com.ddh.learn.example;
+package com.ddh.learn.transactional;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NacosGatewayProviderExampleApplicationTests {
+class RocketmqTransactionalProviderApplicationTests {
 
     @Test
     void contextLoads() {

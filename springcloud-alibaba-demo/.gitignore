@@ -1,0 +1,13 @@
+# ignore file and dictionary
+*.iml
+#target/
+*/target
+*/*/target
+*/*/*/target
+.idea
+
+.DS_Store
+*/*/DS_Store
+*.mvn
+mvnw
+*.cmd

@@ -1,10 +1,10 @@
-package com.ddh.learn.example;
+package com.ddh.learn.provider;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NacosGatewayProviderExampleApplicationTests {
+class NacosGatewayProviderApplicationTests {
 
     @Test
     void contextLoads() {

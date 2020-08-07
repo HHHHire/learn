@@ -2,8 +2,15 @@ spring:
   data:
     mongodb:
 #      uri: mongodb://127.0.0.1:27017/learning
-      repositories:
-        type: auto
-      host: 127.0.0.1
-      port: 27017
-      database: learning
+#      repositories:
+#        type: auto
+      uri: mongodb://admin:123456@127.0.0.1:27017/learning?authSource=admin&authMechanism=SCRAM-SHA-1
+#      host: 127.0.0.1
+#      port: 27017
+#      database: learning
+#      username: admin
+#      password: 123456
+#      authentication-database: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
