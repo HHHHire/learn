@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: sentinel-test
+  cloud:
+    sentinel:
+      transport:
+        port: 8091
+        dashboard: 127.0.0.1:8080

@@ -26,6 +26,7 @@
         <module>sentinel-example</module>
         <module>nacos-example</module>
         <module>nacos-example</module>
+        <module>sentinel-example</module>
     </modules>
 
     <properties>

@@ -1,0 +1,15 @@
+server:
+  port: 8095
+spring:
+  application:
+    name: rocketmq-trans
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 127.0.0.1:9876
