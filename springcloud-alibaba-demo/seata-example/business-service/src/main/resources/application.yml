@@ -1,0 +1,12 @@
+server:
+  port: 9033
+spring:
+  application:
+    name: business-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alibaba:
+      seata:
+        tx-service-group: ${spring.application.name}

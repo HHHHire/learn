@@ -27,6 +27,7 @@
         <module>nacos-example</module>
         <module>nacos-example</module>
         <module>sentinel-example</module>
+        <module>seata-example</module>
     </modules>
 
     <properties>
