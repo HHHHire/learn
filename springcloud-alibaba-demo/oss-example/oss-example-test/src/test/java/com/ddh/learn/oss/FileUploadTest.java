@@ -1,12 +1,10 @@
 package com.ddh.learn.oss;
 
 import com.aliyun.oss.OSS;
+import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.common.utils.BinaryUtil;
 import com.aliyun.oss.internal.OSSUtils;
-import com.aliyun.oss.model.AppendObjectRequest;
-import com.aliyun.oss.model.Callback;
-import com.aliyun.oss.model.ObjectMetadata;
-import com.aliyun.oss.model.PutObjectRequest;
+import com.aliyun.oss.model.*;
 import com.ddh.learn.oss.config.OssConfig;
 import org.apache.commons.codec.binary.Base64;
 import org.junit.Test;
@@ -19,9 +17,7 @@ import javax.activation.MimetypesFileTypeMap;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author: dengdh@dist.com.cn
@@ -230,6 +226,7 @@ public class FileUploadTest {
     /**
      * 文件的追加
      */
+    @Test
     public void appendObject() {
         String content1 = "hello world 01";
         String content2 = "hello world 02";
@@ -237,9 +234,101 @@ public class FileUploadTest {
 
         ObjectMetadata metadata = new ObjectMetadata();
         metadata.setContentType("text/plain");
-        AppendObjectRequest appendObject = new AppendObjectRequest(bucketName, "appendTest1", new ByteArrayInputStream(content1.getBytes()), metadata);
+        AppendObjectRequest appendObjectRequest = new AppendObjectRequest(bucketName, "appendTest2", new ByteArrayInputStream(content1.getBytes()), metadata);
 
+        // 通过AppendObjectRequest设置单个参数。
+        // 设置存储空间名称。
+        //appendObjectRequest.setBucketName("<yourBucketName>");
+        // 设置文件名称。
+        //appendObjectRequest.setKey("<yourObjectName>");
+        // 设置待追加的内容。有两种可选类型：InputStream类型和File类型。这里为InputStream类型。
+        //appendObjectRequest.setInputStream(new ByteArrayInputStream(content1.getBytes()));
+        // 设置待追加的内容。有两种可选类型：InputStream类型和File类型。这里为File类型。
+        //appendObjectRequest.setFile(new File("<yourLocalFile>"));
+        // 指定文件的元信息，第一次追加时有效。
+        //appendObjectRequest.setMetadata(meta);
+
+        // 第一次追加。
+        // 设置文件的追加位置。
+        appendObjectRequest.setPosition(0L);
+        AppendObjectResult appendObjectResult = ossClient.appendObject(appendObjectRequest);
+        // 文件的64位CRC值。此值根据ECMA-182标准计算得出。
+        System.out.println(appendObjectResult.getObjectCRC());
+
+        // 第二次追加。
+        // nextPosition指明下一次请求中应当提供的Position，即文件当前的长度。
+        appendObjectRequest.setPosition(appendObjectResult.getNextPosition());
+        appendObjectRequest.setInputStream(new ByteArrayInputStream(content2.getBytes()));
+        appendObjectResult = ossClient.appendObject(appendObjectRequest);
+
+        // 第三次追加。
+        appendObjectRequest.setPosition(appendObjectResult.getNextPosition());
+        appendObjectRequest.setInputStream(new ByteArrayInputStream(content3.getBytes()));
+        appendObjectResult = ossClient.appendObject(appendObjectRequest);
     }
 
+    /**
+     * 分片上传
+     */
+    @Test
+    public void multipartUpload() throws IOException {
+        String objectName = "multipartTest2";
 
+        // 创建InitiateMultipartUploadRequest对象。
+        InitiateMultipartUploadRequest request = new InitiateMultipartUploadRequest(bucketName, objectName);
+
+        // 如果需要在初始化分片时设置文件存储类型，请参考以下示例代码。
+        // ObjectMetadata metadata = new ObjectMetadata();
+        // metadata.setHeader(OSSHeaders.OSS_STORAGE_CLASS, StorageClass.Standard.toString());
+        // request.setObjectMetadata(metadata);
+
+        // 初始化分片。
+        InitiateMultipartUploadResult upresult = ossClient.initiateMultipartUpload(request);
+        // 返回uploadId，它是分片上传事件的唯一标识，您可以根据这个uploadId发起相关的操作，如取消分片上传、查询分片上传等。
+        String uploadId = upresult.getUploadId();
+
+        // partETags是PartETag的集合。PartETag由分片的ETag和分片号组成。
+        List<PartETag> partETags = new ArrayList<>();
+        // 计算文件有多少个分片。
+        final long partSize = 1024 * 1024L;   // 1MB
+        final File sampleFile = new File("F:\\BaiduNetdiskDownload\\暴风激活17.0.zip");
+        long fileLength = sampleFile.length();
+        int partCount = (int) (fileLength / partSize);
+        if (fileLength % partSize != 0) {
+            partCount++;
+        }
+        // 遍历分片上传。
+        for (int i = 0; i < partCount; i++) {
+            long startPos = i * partSize;
+            long curPartSize = (i + 1 == partCount) ? (fileLength - startPos) : partSize;
+            InputStream instream = new FileInputStream(sampleFile);
+            // 跳过已经上传的分片。
+            instream.skip(startPos);
+            UploadPartRequest uploadPartRequest = new UploadPartRequest();
+            uploadPartRequest.setBucketName(bucketName);
+            uploadPartRequest.setKey(objectName);
+            uploadPartRequest.setUploadId(uploadId);
+            uploadPartRequest.setInputStream(instream);
+            // 设置分片大小。除了最后一个分片没有大小限制，其他的分片最小为100 KB。
+            uploadPartRequest.setPartSize(curPartSize);
+            // 设置分片号。每一个上传的分片都有一个分片号，取值范围是1~10000，如果超出这个范围，OSS将返回InvalidArgument的错误码。
+            uploadPartRequest.setPartNumber( i + 1);
+            // 每个分片不需要按顺序上传，甚至可以在不同客户端上传，OSS会按照分片号排序组成完整的文件。
+            UploadPartResult uploadPartResult = ossClient.uploadPart(uploadPartRequest);
+            // 每次上传分片之后，OSS的返回结果包含PartETag。PartETag将被保存在partETags中。
+            partETags.add(uploadPartResult.getPartETag());
+        }
+
+
+        // 在执行完成分片上传操作时，需要提供所有有效的partETags。OSS收到提交的partETags后，会逐一验证每个分片的有效性。当所有的数据分片验证通过后，OSS将把这些分片组合成一个完整的文件。
+        CompleteMultipartUploadRequest completeMultipartUploadRequest =
+                new CompleteMultipartUploadRequest(bucketName, objectName, uploadId, partETags);
+
+        // 如果需要在完成文件上传的同时设置文件访问权限，请参考以下示例代码。
+        // completeMultipartUploadRequest.setObjectACL(CannedAccessControlList.PublicRead);
+
+        // 完成上传。
+        ossClient.completeMultipartUpload(completeMultipartUploadRequest);
+
+    }
 }
