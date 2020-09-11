@@ -1,0 +1,5 @@
+rootProject.name = 'groovy'
+include 'gradle-web'
+include 'gradle-service'
+include 'gradle-dao'
+

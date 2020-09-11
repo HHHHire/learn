@@ -1,0 +1,5 @@
+// 使用父工程的配置依赖
+dependencies{
+    // 依赖service模块
+    compile project(':gradle-service')
+}

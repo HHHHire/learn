@@ -5,4 +5,5 @@ package com.ddh.learn.gradle.service;
  * @data: 2020/8/12 20:52
  */
 public interface AccountService {
+    void findAll();
 }

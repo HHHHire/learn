@@ -1,0 +1,32 @@
+allprojects {
+
+// 指定webapp成为web文件夹
+    apply plugin: 'war'
+
+
+    group 'com.ddh.learn'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = 1.8
+
+/**
+ * 指定所用仓库，mavenCentral表示使用中央仓库，项目中所有jar包都默认从中央仓库下到本地仓库
+ */
+    repositories {
+        // 直接从本地仓库拿jar包
+        mavenLocal()
+        mavenCentral()
+    }
+
+/**
+ * jar包的坐标
+ * group name version
+ * testCompile 表示该jar包在测试的时候起作用，该属性为jar包的作用域
+ */
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        compile group: 'org.springframework', name: 'spring-context', version: '5.2.3.RELEASE'
+
+    }
+}
+

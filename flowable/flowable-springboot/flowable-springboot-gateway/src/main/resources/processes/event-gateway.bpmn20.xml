@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+        xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:flowable="http://flowable.org/bpmn"
+        targetNamespace="Examples">
+
+    <signal id="alertSignal" name="alert"/>
+
+    <process id="event-gateway" name="The One Task Process">
+        <startEvent id="theStart"/>
+        <sequenceFlow id="flow0" sourceRef="theStart" targetRef="gateway"/>
+
+        <eventBasedGateway id="gateway"/>
+        <sequenceFlow id="flow1" sourceRef="gateway" targetRef="theTask1"/>
+        <sequenceFlow id="flow2" sourceRef="gateway" targetRef="theTask2"/>
+
+        <intermediateCatchEvent id="theTask1">
+            <signalEventDefinition signalRef="alertSignal"/>
+        </intermediateCatchEvent>
+
+        <intermediateCatchEvent id="theTask2">
+            <timerEventDefinition>
+                <timeCycle>0 0/1 * * * ?</timeCycle>
+            </timerEventDefinition>
+        </intermediateCatchEvent>
+
+        <sequenceFlow sourceRef="theTask2" targetRef="ex-gateway"/>
+        <sequenceFlow sourceRef="theTask1" targetRef="theTask3"/>
+
+        <serviceTask id="theTask3" flowable:expression="${hello.hello()}"/>
+        <sequenceFlow sourceRef="theTask3" targetRef="ex-gateway"/>
+
+        <exclusiveGateway id="ex-gateway"/>
+        <sequenceFlow sourceRef="ex-gateway" targetRef="theTask4"/>
+
+        <serviceTask id="theTask4" flowable:expression="${hello.hello2()}"/>
+        <sequenceFlow sourceRef="theTask3" targetRef="theEnd"/>
+
+        <endEvent id="theEnd"/>
+    </process>
+
+</definitions>

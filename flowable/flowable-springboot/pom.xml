@@ -14,5 +14,7 @@
 
     <modules>
         <module>flowable-springboot-demo</module>
+        <module>flowable-springboot-gateway</module>
+        <module>flowable-springboot-sequenceflow</module>
     </modules>
 </project>

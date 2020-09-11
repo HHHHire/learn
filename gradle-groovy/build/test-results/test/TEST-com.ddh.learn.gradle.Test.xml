@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ddh.learn.gradle.Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-12T13:00:22" hostname="deng" time="0.255">
+  <properties/>
+  <testcase name="test1" classname="com.ddh.learn.gradle.Test" time="0.255"/>
+  <system-out><![CDATA[hello world
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

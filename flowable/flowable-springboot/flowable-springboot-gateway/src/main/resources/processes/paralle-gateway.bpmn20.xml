@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+        xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:flowable="http://flowable.org/bpmn"
+        targetNamespace="Examples">
+
+    <process id="paralle-gateway" name="The One Task Process">
+        <startEvent id="theStart"/>
+        <sequenceFlow id="flow0" sourceRef="theStart" targetRef="gateway"/>
+
+        <parallelGateway id="gateway"/>
+        <sequenceFlow id="flow1" sourceRef="gateway" targetRef="theTask1">
+            <conditionExpression>
+                <![CDATA[${order.price > 100 && order.price < 250}]]>
+            </conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow id="flow2" sourceRef="gateway" targetRef="theTask2">
+            <conditionExpression>
+                <![CDATA[${order.price <= 100}]]>
+            </conditionExpression>
+        </sequenceFlow>
+
+        <serviceTask id="theTask1" name="my task1" flowable:expression="${hello.hello()}"/>
+        <sequenceFlow id="flow4" sourceRef="theTask1" targetRef="theEnd"/>
+
+        <serviceTask id="theTask2" name="my task2" flowable:expression="${hello.hello2()}"/>
+        <sequenceFlow id="flow5" sourceRef="theTask2" targetRef="theEnd"/>
+
+
+        <endEvent id="theEnd"/>
+    </process>
+
+</definitions>
