@@ -1,0 +1,15 @@
+server:
+  port: 8082
+dubbo:
+  application:
+    name: web1-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    file: N/A
+  annotation:
+    package: com.ddh.learn.web
+  provider:
+    version: 1.0.0
+  consumer:
+    version: 1.0.0
+    timeout: 500000

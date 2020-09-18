@@ -3,3 +3,13 @@ server:
 spring:
   application:
     name: provider-demo
+#  redis:
+#    host: 10.96.17.43
+#    port: 6379
+#    jedis:
+#      pool:
+#        min-idle: 0
+#        max-idle: 8
+#        max-active: 8
+#        max-wait: -1ms
+#    timeout: 50000ms

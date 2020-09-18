@@ -15,9 +15,9 @@ import org.springframework.context.annotation.ImportResource;
 public class ConsumerDemoApplication {
 
     public static void main(String[] args) {
-        RegistryFactory registryFactory = ExtensionLoader.getExtensionLoader(RegistryFactory.class).getAdaptiveExtension();
-        Registry registry = registryFactory.getRegistry(URL.valueOf("zookeeper://127.0.0.1:2181"));
-        registry.register(URL.valueOf("condition://0.0.0.0/com.ddh.learn.api.service.ProviderService?version=1.0.0&name=路由规则2&category=routers&dynamic=false&rule=" + URL.encode(" => host != 192.168.99.1")));
+//        RegistryFactory registryFactory = ExtensionLoader.getExtensionLoader(RegistryFactory.class).getAdaptiveExtension();
+//        Registry registry = registryFactory.getRegistry(URL.valueOf("zookeeper://127.0.0.1:2181"));
+//        registry.register(URL.valueOf("condition://0.0.0.0/com.ddh.learn.api.service.ProviderService?version=1.0.0&name=路由规则2&category=routers&dynamic=false&rule=" + URL.encode(" => host != 192.168.99.1")));
         SpringApplication.run(ConsumerDemoApplication.class, args);
     }
 }

@@ -2,6 +2,6 @@ server:
   port: 9020
 oss:
   endpoint: "oss-cn-shanghai.aliyuncs.com"
-  accessKeyId:
-  accessKeySecret:
-  bucketName:
+  accessKeyId: LTAI4G7t8JpXubGvnNS15dTK
+  accessKeySecret: DW2YLtVQw6ZcE9eS2WsjB3KVWMMlu1
+  bucketName: hhhhire

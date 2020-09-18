@@ -287,7 +287,7 @@ public class FileUploadTest {
         // 返回uploadId，它是分片上传事件的唯一标识，您可以根据这个uploadId发起相关的操作，如取消分片上传、查询分片上传等。
         String uploadId = upresult.getUploadId();
 
-        // partETags是PartETag的集合。PartETag由分片的ETag和分片号组成。
+        // partETags是PartETag的集合。PartETag由分片的ETag和分片号组成，分片唯一标识。
         List<PartETag> partETags = new ArrayList<>();
         // 计算文件有多少个分片。
         final long partSize = 1024 * 1024L;   // 1MB

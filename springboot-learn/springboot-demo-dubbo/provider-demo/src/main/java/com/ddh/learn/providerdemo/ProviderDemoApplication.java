@@ -1,11 +1,10 @@
 package com.ddh.learn.providerdemo;
 
-import com.alibaba.dubbo.config.ServiceConfig;
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
-import com.ddh.learn.api.service.ProviderService;
-import com.ddh.learn.providerdemo.service.ProviderServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
