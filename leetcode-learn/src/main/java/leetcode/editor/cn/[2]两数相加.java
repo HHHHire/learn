@@ -46,7 +46,40 @@ class ListNode {
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        return null;
+        // 最开始节点
+        ListNode pre = new ListNode(0);
+        ListNode cur = pre;
+        // 进位
+        int c = 0;
+        while (l1 != null || l2 != null) {
+            int x = l1 == null ? 0 : l1.val;
+            int y = l2 == null ? 0 : l2.val;
+
+            // 两数之和，还要加上进位
+            int sum = x + y + c;
+            // 算出进位
+            c = sum / 10;
+            // 算出真正放在节点上的数
+            sum = sum % 10;
+
+            // 把数放到下一个节点上
+            cur.next = new ListNode(sum);
+            cur = cur.next;
+
+            // 如果还存在下一个节点，继续
+            if (l1 != null) {
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                l2 = l2.next;
+            }
+        }
+        // 循环完成后还有进位的话，在另外加一个节点存放
+        if (c == 1) {
+            cur.next = new ListNode(1);
+        }
+        // 返回最开始的节点
+        return pre.next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
