@@ -23,13 +23,21 @@ public class SsoController {
     }
 
     /**
+     * 检查是否有sso的session，如果有就不用登录，返回令牌
+     */
+    @GetMapping("loginCheck")
+    public String loginCheck(HttpServletRequest request, HttpServletResponse response) {
+        return ssoService.loginCheck(request);
+    }
+
+    /**
      * 登录获取令牌
      */
     @GetMapping("login")
     public String login(@RequestParam(value = "name", required = false) String name,
                         @RequestParam(value = "pwd", required = false) String pwd,
-                        HttpServletRequest request) {
-        return ssoService.login(name, pwd, request);
+                        HttpServletRequest request, HttpServletResponse response) {
+        return ssoService.login(name, pwd, request, response);
     }
 
     @GetMapping("checkToken/{token}")

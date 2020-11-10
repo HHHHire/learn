@@ -43,9 +43,8 @@ public class ProviderServiceImpl implements ProviderService {
         } else {
             redisPoolUtil.setValueByte(localAddr.getBytes(), Integer.toString(visitCounts).getBytes());
         }
-        return "hello world! v4  </br>" +
-                "IP: " + localAddr + "</br>" +
-                "you have visit:  " + visitCounts + "   times!";
+        return "hello world! v5  </br>" +
+                "IP: " + localAddr + "</br>";
 
 
     }

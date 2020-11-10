@@ -6,9 +6,10 @@
         <artifactId>flowable</artifactId>
         <groupId>com.ddh.learn</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
 
     <artifactId>flowable-springboot</artifactId>
 
@@ -16,5 +17,6 @@
         <module>flowable-springboot-demo</module>
         <module>flowable-springboot-gateway</module>
         <module>flowable-springboot-sequenceflow</module>
+        <module>flowable-springboot-modeler</module>
     </modules>
 </project>

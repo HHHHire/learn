@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 
 /**
  * @author: dengdh@dist.com.cn
@@ -31,7 +34,9 @@ public class WebController {
     private SsoService ssoService;
 
     @GetMapping("getData")
-    public String getData(HttpServletRequest request, @RequestParam(value = "token",required = false) String token){
+    public String getData(HttpServletRequest request,
+                          HttpServletResponse response,
+                          @RequestParam(value = "token",required = false) String token) throws ServletException, IOException {
         // 先判断有没有本机 session
         HttpSession session = request.getSession();
         if (session != null) {
@@ -54,7 +59,14 @@ public class WebController {
         }
 
         // 去 sso 登录
-        return "请去登录: www.sso.com:8083/sso/login?name=zhangsan&pwd=123456";
+//        try {
+//            response.sendRedirect("http://www.sso.com:8083/sso/loginCheck");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+//        request.getRequestDispatcher("http://www.sso.com:8083/sso/loginCheck").forward(request,response);
+        return "error";
     }
 
 

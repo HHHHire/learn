@@ -1,5 +1,7 @@
 package com.ddh.learn.concurrency.thread.test;
 
+import org.openjdk.jol.info.ClassLayout;
+
 /**
  * @author: dengdh@dist.com.cn
  * @data: 2020/7/11 17:51
@@ -20,8 +22,17 @@ public class ThreadTest1 {
     }
 
     public static void main(String[] args) {
-        new ReaderThread().start();
-        num = 2;
-        ready = true;
+//        new ReaderThread().start();
+//        num = 2;
+//        ready = true;
+
+        ThreadTest1 o = new ThreadTest1();
+        System.out.println(ClassLayout.parseInstance(o).toPrintable());
+
+        synchronized (o) {
+            System.out.println(ClassLayout.parseInstance(o).toPrintable());
+        }
+
+
     }
 }

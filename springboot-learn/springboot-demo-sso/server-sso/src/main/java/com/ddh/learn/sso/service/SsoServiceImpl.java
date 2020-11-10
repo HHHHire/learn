@@ -6,6 +6,7 @@ import com.ddh.learn.api.service.SsoService;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.UUID;
 
@@ -29,7 +30,8 @@ public class SsoServiceImpl implements SsoService {
     /**
      * 检查是否有sso的session，如果有就不用登录，返回令牌
      */
-    private String loginCheck(HttpServletRequest request) {
+    @Override
+    public String loginCheck(HttpServletRequest request) {
         HttpSession session = request.getSession();
         // session 不为空
         if (session != null) {
@@ -52,17 +54,18 @@ public class SsoServiceImpl implements SsoService {
      * 登录获取令牌
      */
     @Override
-    public String login(String name, String pwd, HttpServletRequest request) {
+    public String login(String name, String pwd, HttpServletRequest request, HttpServletResponse response) {
         // 首先判断是否登录过
         HttpSession session = request.getSession();
         // session 不为空，且检查正确，返回 token
         if (session != null) {
             User sso = (User) session.getAttribute(SSO);
             if (sso != null && NAME.equals(sso.getName()) && PWD.equals(sso.getPwd())) {
+                String token;
                 if (redisTemplate.hasKey(TOKEN)) {
-                    return redisTemplate.opsForValue().get(TOKEN);
+                    token = redisTemplate.opsForValue().get(TOKEN);
                 } else {
-                    String token = UUID.randomUUID().toString();
+                    token = UUID.randomUUID().toString();
                     redisTemplate.opsForValue().set(TOKEN, token);
                     return token;
                 }
