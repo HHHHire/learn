@@ -44,7 +44,7 @@ class ListNode {
     }
 }
 
-class Solution {
+class Solution2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 最开始节点
         ListNode pre = new ListNode(0);
