@@ -12,7 +12,7 @@
 // 输入: "bbbbb"
 //输出: 1
 //解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
-// 
+//
 //
 // 示例 3: 
 //
@@ -27,9 +27,32 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 package leetcode.editor.cn;
-class Solution {
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 还可以用 s.indexOf(char,index) 从index开始查询字符串s中的第一个char字符，返回位置。
+ * 在doc 3.md中的例子
+ */
+class Solution3 {
     public int lengthOfLongestSubstring(String s) {
-        return 1;
+        int start = 0;
+        int end = start;
+        int len = 0;
+        int tmp = 0;
+        Map<Character, Integer> map = new HashMap<>(26);
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (map.get(chars[i]) != null) {
+                tmp = map.get(chars[i]) + 1;
+                start = start > tmp ? start : tmp;
+            }
+            map.put(chars[i], i);
+            end = i + 1;
+            len = len > (end - start) ? len : (end - start);
+        }
+        return len;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
