@@ -19,8 +19,8 @@ flowable:
       admin:
         user-id: admin
         password: test
-        first-name: admin
-        last-name: admin
+#        first-name: admin
+#        last-name: admin
   rest:
     app:
       authentication-mode: verify-privilege
