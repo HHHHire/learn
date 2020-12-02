@@ -48,6 +48,14 @@ public class AuditMethod {
         return null;
     }
 
+    public String getCandidateUsers(DelegateExecution execution){
+        CandidateParam candidate = getCurrentAuditor(execution);
+        if(candidate.getType() == null || candidate.getType() == CandidateType.USER) {
+            return candidate.getId();
+        }
+        return null;
+    }
+
     /**
      * 是否同意申请
      */

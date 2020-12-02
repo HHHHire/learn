@@ -1,10 +1,8 @@
 package com.ddh.learn.demo.bean.model;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**

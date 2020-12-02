@@ -22,23 +22,23 @@ public class FlowableSpringbootDemoApplication {
         SpringApplication.run(FlowableSpringbootDemoApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner init(final RepositoryService repositoryService,
-                                  final TaskService taskService,
-                                  final RuntimeService runtimeService,
-                                  IdentityService identityService) {
-        return new CommandLineRunner() {
-            @Override
-            public void run(String... args) throws Exception {
-                System.out.println("Number of process define: " + repositoryService.createProcessDefinitionQuery().count());
-                System.out.println("Number of task : " + taskService.createTaskQuery().count());
-                runtimeService.startProcessInstanceByKey("oneTaskProcess");
-                System.out.println("After start process Number of task : " + taskService.createTaskQuery().count());
-
-                System.out.println("========================================");
-                List<Execution> alert = runtimeService.createExecutionQuery().signalEventSubscriptionName("alert").list();
-                System.out.println(alert);
-            }
-        };
-    }
+//    @Bean
+//    public CommandLineRunner init(final RepositoryService repositoryService,
+//                                  final TaskService taskService,
+//                                  final RuntimeService runtimeService,
+//                                  IdentityService identityService) {
+//        return new CommandLineRunner() {
+//            @Override
+//            public void run(String... args) throws Exception {
+//                System.out.println("Number of process define: " + repositoryService.createProcessDefinitionQuery().count());
+//                System.out.println("Number of task : " + taskService.createTaskQuery().count());
+//                runtimeService.startProcessInstanceByKey("oneTaskProcess");
+//                System.out.println("After start process Number of task : " + taskService.createTaskQuery().count());
+//
+//                System.out.println("========================================");
+//                List<Execution> alert = runtimeService.createExecutionQuery().signalEventSubscriptionName("alert").list();
+//                System.out.println(alert);
+//            }
+//        };
+//    }
 }

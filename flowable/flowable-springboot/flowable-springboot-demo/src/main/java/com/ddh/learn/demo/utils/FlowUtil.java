@@ -4,8 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ddh.learn.demo.bean.enums.AuditStatus;
 import com.ddh.learn.demo.bean.model.CandidateParam;
+import com.ddh.learn.demo.bean.model.ProcessParam;
 import org.flowable.engine.delegate.DelegateExecution;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -56,6 +60,8 @@ public class FlowUtil {
 
     private static final String NAME_KEY = "USERNAME";
 
+    private static Logger log = LoggerFactory.getLogger(FlowUtil.class);
+
     /**
      * 是否存在审批人
      */
@@ -67,8 +73,11 @@ public class FlowUtil {
      * 获取当前审批人
      */
     public static Optional<CandidateParam> getCandidateFromExecution(DelegateExecution execution) {
-        return Optional.ofNullable(JSONObject.toJavaObject(JSONObject.parseObject(
-                (String) execution.getVariable(AUDITOR_KEY)), CandidateParam.class));
+        log.info(execution.getVariable(AUDITOR_KEY).toString());
+//        String variable = (String) execution.getVariable(AUDITOR_KEY);
+        Optional<CandidateParam> candidateParam = Optional.ofNullable(JSONObject.parseObject(JSONObject.toJSONString(
+                execution.getVariable(AUDITOR_KEY)), CandidateParam.class));
+        return candidateParam;
     }
 
     public static List<CandidateParam> getCandidateList(DelegateExecution execution) {
@@ -89,8 +98,10 @@ public class FlowUtil {
     }
 
     public static Optional<CandidateParam> getCandidate(Map<String, Object> params) {
-        return Optional.ofNullable(JSONObject.toJavaObject(JSONObject.parseObject(
-                (String) params.get(AUDITOR_KEY)), CandidateParam.class));
+//        return Optional.ofNullable(JSONObject.toJavaObject(JSONObject.parseObject(
+//                (String) params.get(AUDITOR_KEY)), CandidateParam.class));
+        return Optional.ofNullable(JSONObject.parseObject(JSONObject.toJSONString(
+                params.get(AUDITOR_KEY)), CandidateParam.class));
     }
 
     public static String getFromUserName(Map<String, Object> params) {
@@ -103,6 +114,19 @@ public class FlowUtil {
 
     public static void removeCandidate(DelegateExecution execution) {
         execution.removeVariable(AUDITOR_KEY);
+    }
+
+    public static Map<String, Object> initStartMap(ProcessParam param) {
+        Map<String, Object> map = new HashMap<>();
+        // 放入申请类型
+        map.put(AUDIT_TYPE_KEY, param.getType());
+        // 审批人列表
+        map.put(AUDITOR_LIST_KEY, JSONObject.toJSONString(param.getAuditors()));
+        // 其他参数
+        map.put(AUDIT_PARAMS_KEY, JSONObject.toJSONString(param.getParams()));
+        // 审批状态
+        map.put(AUDIT_STATUS_KEY, AuditStatus.WAIT_AUDIT.toString());
+        return map;
     }
 
 }
