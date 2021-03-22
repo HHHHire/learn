@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    function reloadCode() {
+        document.getElementById("imgSignCode").src="getVerifyCode?r=" + new Date().getTime();     //这里为什么会加一个时间戳参数呢？
+        // 浏览器带有缓存功能
+//当一个src中的URL请求一次后，再次请求浏览器就不会再去请求获得新数据，而是直接用
+//上次请求返回的数据
+    }
+</script>
+<body>
+<form th:action="@{/submit}">
+    <img id="imgSignCode" th:src="@{/getVerifyCode}" onclick="reloadCode()" title="重新获取" style="cursor:pointer;"/>
+    请输入验证码: <input type="text" name="inputCode">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
