@@ -1,5 +1,6 @@
 package com.ddh.learn.utils.model.request;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.util.List;
  * @data: 2021/3/14 0:46
  */
 @Data
+@Builder
 public class UserRequest implements Serializable {
     private String id;
     private String name;
