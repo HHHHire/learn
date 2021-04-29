@@ -16,7 +16,6 @@ public class TestControllerV2 {
     @GetMapping("/test/v2")
     public Object getUser(HttpServletResponse response) throws IOException {
         UserRequest build = UserRequest.builder().id("test").name("zhangsan").build();
-        // test2
         response.setContentType("application/json;charset=utf-8");
 //        response.getWriter().write(build.toString());
         return build;
