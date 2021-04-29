@@ -1,0 +1,13 @@
+spring:
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+    database: 0
+    host: 47.100.88.162
+    port: 6379
+test:
+  value: hello
