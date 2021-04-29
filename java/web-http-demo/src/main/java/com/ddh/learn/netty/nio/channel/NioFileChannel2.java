@@ -25,9 +25,17 @@ public class NioFileChannel2 {
         ByteBuffer buffer = ByteBuffer.allocate((int) file.length());
 
         // 如果这里不指定大小
+        /*ByteBuffer buffer1 = ByteBuffer.allocate(512);
         while (true) {
-            
-        }
+            // 必须复位
+            buffer.clear();
+            int read = inputChannel.read(buffer1);
+            if (read == -1) {
+                break;
+            }
+            buffer.flip();
+            outputChannel.write(buffer1);
+        }*/
 
 
 

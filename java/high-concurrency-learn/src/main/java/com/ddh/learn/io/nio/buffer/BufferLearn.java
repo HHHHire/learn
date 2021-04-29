@@ -17,7 +17,7 @@ public class BufferLearn {
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024);
         // 写入缓冲
         buffer.put(bytes);
-        // 切换为读模式
+        // 切换为读模式，读写切换
         buffer.flip();
 
         byte[] temp = new byte[bytes.length];
