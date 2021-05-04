@@ -1,6 +1,6 @@
 
 server:
-  port: 8402
+  port: 8502
 spring:
   application:
     name: product-server

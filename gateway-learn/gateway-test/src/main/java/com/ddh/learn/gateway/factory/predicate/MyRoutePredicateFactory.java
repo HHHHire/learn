@@ -1,4 +1,4 @@
-package com.ddh.learn.gateway.factory;
+package com.ddh.learn.gateway.factory.predicate;
 
 import org.springframework.cloud.gateway.handler.predicate.AbstractRoutePredicateFactory;
 import org.springframework.stereotype.Component;

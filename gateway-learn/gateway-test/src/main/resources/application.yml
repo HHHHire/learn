@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 9300
 management:
   endpoints:
     web:
@@ -24,10 +24,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: product-server
-          uri: lb://product-server
-          predicates:
-            - Path=/product/**
+#        - id: product-server
+#          uri: lb://product-server
+#          predicates:
+#            - Path=/product/**
         - id: order-service
           uri: lb://order-service
           predicates:

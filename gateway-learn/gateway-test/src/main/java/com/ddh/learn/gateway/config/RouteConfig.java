@@ -12,17 +12,17 @@ import java.util.List;
 
 /**
  * @author: dengdh@dist.com.cn
- * @data: 2021/4/22 23:59
+ * @data: 2021/4/22 21:59
  */
 @Configuration
 public class RouteConfig {
     private List<Route.AsyncBuilder> routes = new ArrayList<>();
+
     @Bean
     public RouteLocator getRouteLocator(RouteLocatorBuilder builder) {
-        RouteLocator path_route = builder.routes()
+        return builder.routes()
                 .route("path_route", r -> r.path("/product/**")
-                        .uri("http://localhost:8402").filter(new TestFilter()))
+                        .uri("http://localhost:8502").filter(new TestFilter()))
                 .build();
-        return path_route;
     }
 }

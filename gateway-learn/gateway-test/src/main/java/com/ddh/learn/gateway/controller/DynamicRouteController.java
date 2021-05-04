@@ -9,8 +9,10 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.FilterDefinition;
 import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
+import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
+import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -35,6 +37,9 @@ public class DynamicRouteController {
     @Autowired
     private RouteDefinitionLocator routeDefinitionLocator;
 
+    @Autowired
+    private RouteLocator routeLocator;
+
     /**
      * 获取所有路由信息
      */
@@ -42,6 +47,17 @@ public class DynamicRouteController {
     @GetMapping("/all")
     public Flux<RouteDefinition> getRouteDefinitions() {
         return routeDefinitionLocator.getRouteDefinitions();
+    }
+
+    /**
+     * 获取所有路由信息
+     */
+    @ApiOperation(value = "获取所有路由信息V2", httpMethod = "GET")
+    @GetMapping("/all/v2")
+    public Flux<Route> getRouteDefinitionsV2() {
+        Flux<Route> routes = routeLocator.getRoutes();
+        System.out.println(routes);
+        return null;
     }
 
     /**
