@@ -16,7 +16,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.G
  * @author: dengdh@dist.com.cn
  * @data: 2021/5/5 10:15
  */
-@Component
+//@Component
 public class UserLoadBalancerClientFilter extends LoadBalancerClientFilter {
 
     public UserLoadBalancerClientFilter(LoadBalancerClient loadBalancer, LoadBalancerProperties properties) {

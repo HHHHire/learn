@@ -17,8 +17,6 @@ import java.util.function.Predicate;
 @Component
 public class MyRoutePredicateFactory extends AbstractRoutePredicateFactory<MyRoutePredicateFactory.Config> {
 
-    private String user = "mt";
-
     public MyRoutePredicateFactory() {
         super(MyRoutePredicateFactory.Config.class);
     }
@@ -26,7 +24,11 @@ public class MyRoutePredicateFactory extends AbstractRoutePredicateFactory<MyRou
     @Override
     public Predicate<ServerWebExchange> apply(MyRoutePredicateFactory.Config config) {
         return serverWebExchange -> {
-            if (config.sources.contains(user)) {
+            String userName = serverWebExchange.getRequest().getQueryParams().getFirst("userName");
+//            if (config.sources.contains(user)) {
+//                return true;
+//            }
+            if (userName.equals(config.getSources().get(0))) {
                 return true;
             }
             return false;

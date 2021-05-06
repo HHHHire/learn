@@ -1,5 +1,5 @@
 server:
-  port: 9300
+  port: 9400
 management:
   endpoints:
     web:
@@ -19,6 +19,9 @@ spring:
   application:
     name: gateway-server
   cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
     gateway:
       discovery:
         locator:
@@ -32,5 +35,8 @@ spring:
           uri: lb://order-service
           predicates:
             - Path=/order/**
+            - name: My
+              args:
+                sources: zhangsan
           filters:
             - Pre=hello

@@ -12,7 +12,7 @@ import java.util.List;
  * @author: dengdh@dist.com.cn
  * @data: 2021/5/4 18:35
  */
-@Component
+//@Component
 public class MyBalanceRule extends AbstractLoadBalancerRule {
     @Override
     public void initWithNiwsConfig(IClientConfig iClientConfig) {
