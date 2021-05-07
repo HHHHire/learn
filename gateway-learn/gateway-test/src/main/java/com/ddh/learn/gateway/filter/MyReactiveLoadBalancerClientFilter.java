@@ -1,10 +1,10 @@
 package com.ddh.learn.gateway.filter;
 
 import com.ddh.learn.gateway.config.balanceRule.MyRoundRobinLoadBalancer;
+import com.ddh.learn.gateway.utils.IpUtil;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerUriTools;
-import org.springframework.cloud.client.loadbalancer.reactive.ReactiveLoadBalancer;
 import org.springframework.cloud.client.loadbalancer.reactive.Request;
 import org.springframework.cloud.client.loadbalancer.reactive.Response;
 import org.springframework.cloud.gateway.config.LoadBalancerProperties;
@@ -15,6 +15,7 @@ import org.springframework.cloud.gateway.support.NotFoundException;
 import org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplier;
 import org.springframework.cloud.loadbalancer.support.LoadBalancerClientFactory;
 import org.springframework.core.Ordered;
+import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
@@ -84,11 +85,12 @@ public class MyReactiveLoadBalancerClientFilter implements GlobalFilter, Ordered
             loadBalancer = new MyRoundRobinLoadBalancer(clientFactory.getLazyProvider(uri.getHost(), ServiceInstanceListSupplier.class), uri.getHost());
         }
         // 调用自己的策略
-        return loadBalancer.choose(createRequest());
+        return loadBalancer.choose(createRequest(exchange));
     }
 
-    private Request createRequest() {
-        return ReactiveLoadBalancer.REQUEST;
+    private Request createRequest(ServerWebExchange exchange) {
+        String ip = IpUtil.getIp(exchange.getRequest());
+        return new MyRequest(ip);
     }
 
     @Override
