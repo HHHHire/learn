@@ -6,8 +6,9 @@ import java.util.TreeMap;
 /**
  * @author: dengdh@dist.com.cn
  * @data: 2021/5/6 22:28
+ * @des: 试用测试
  */
-public class HashVirtualNodeUtil {
+public class HashVirtualNodeTest {
     private static String[] servers = {"127.0.0.1:8501", "127.0.0.1:8503"};
     private final static int virtualNode = 5;
     private static SortedMap<Integer, String> virtualNodeMap = new TreeMap<>();
