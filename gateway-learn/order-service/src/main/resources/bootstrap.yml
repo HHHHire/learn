@@ -1,0 +1,25 @@
+server:
+  port: 8501
+spring:
+  application:
+    name: order-service
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8300/eureka/
+  cloud:
+    nacos:
+      config:
+        enabled: false
+        server-addr: 127.0.0.1:8848
+        namespace: gateway-test
+        file-extension: yaml
+        name: gateway-test
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        namespace: gateway-test
+

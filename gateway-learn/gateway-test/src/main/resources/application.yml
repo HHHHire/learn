@@ -8,35 +8,9 @@ management:
   endpoint:
     health:
       show-details: always
-eureka:
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
-  client:
-    service-url:
-      defaultZone: http://localhost:8300/eureka/
+
 spring:
   application:
     name: gateway-server
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-#        - id: product-server
-#          uri: lb://product-server
-#          predicates:
-#            - Path=/product/**
-        - id: order-service
-          uri: lb://order-service
-          predicates:
-            - Path=/order/**
-            - name: My
-              args:
-                sources: zhangsan
-          filters:
-            - Pre=hello
+  profiles:
+    active: @profile.active@

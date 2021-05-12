@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      routes:
+#        - id: product-server
+#          uri: lb://product-server
+#          predicates:
+#            - Path=/product/**
+        - id: order-service
+          uri: http://127.0.0.1:8501
+          predicates:
+            - Path=/order/**
+#            - name: My
+#              args:
+#                sources: zhangsan
+          filters:
+            - Pre=hello
+eureka:
+  client:
+    enabled: false

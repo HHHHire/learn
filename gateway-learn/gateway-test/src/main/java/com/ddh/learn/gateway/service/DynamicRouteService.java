@@ -1,15 +1,21 @@
 package com.ddh.learn.gateway.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
 import org.springframework.cloud.gateway.route.RouteDefinition;
+import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
 import org.springframework.cloud.gateway.route.RouteDefinitionWriter;
 import org.springframework.cloud.gateway.support.NotFoundException;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 /**
  * @author: dengdh@dist.com.cn
@@ -20,7 +26,12 @@ public class DynamicRouteService implements ApplicationEventPublisherAware {
     @Autowired
     private RouteDefinitionWriter routeDefinitionWriter;
 
+    @Autowired
+    private RouteDefinitionLocator routeDefinitionLocator;
+
     private ApplicationEventPublisher publisher;
+
+    private static Logger logger = LoggerFactory.getLogger(DynamicRouteService.class);
 
     @Override
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
@@ -65,6 +76,18 @@ public class DynamicRouteService implements ApplicationEventPublisherAware {
         } catch (Exception e) {
             return "fail";
         }
+    }
+
+    public String updateByList(List<RouteDefinition> routeDefinitions) {
+        // 先全部清除
+        List<RouteDefinition> routeDefinitionsExits = routeDefinitionLocator.getRouteDefinitions().buffer().blockFirst();
+        if (!CollectionUtils.isEmpty(routeDefinitionsExits)) {
+            routeDefinitionsExits.forEach(r -> this.delete(r.getId()));
+        }
+
+        // 在添加
+        routeDefinitions.forEach(this::update);
+        return "success";
     }
 
 }

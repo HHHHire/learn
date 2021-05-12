@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
  */
 @RestController
 @RequestMapping("/route")
-@Api(tags = "DynamicRouteController", description = "动态路由")
+//@Api(tags = "DynamicRo/uteController", description = "动态路由")
 public class DynamicRouteController {
     @Autowired
     private DynamicRouteService dynamicRouteService;

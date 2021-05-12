@@ -1,0 +1,35 @@
+server:
+  port: 9400
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  application:
+    name: gateway-server
+  profiles:
+    active: @profile.active@
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        namespace: gateway-test
+        file-extension: yaml
+        name: gateway-nacos
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        namespace: gateway-test
+nacos:
+  router:
+    server-addr: 127.0.0.1:8848
+    namespace: gateway-test
+    file-extension: json
+    name: gateway-router
+    group: DEFAULT_GROUP

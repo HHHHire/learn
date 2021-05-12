@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      routes:
+        - id: order-service
+          uri: http://127.0.0.1:8501
+          predicates:
+            - Path=/order/**
+          filters:
+eureka:
+  client:
+    enabled: false
