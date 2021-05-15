@@ -8,14 +8,16 @@ package strategy;
 public class Test {
     public static void main(String[] args) {
         Context context;
-        // 弱对手
-        context = new Context(new WeakStrategy());
-        context.fight();
+        // 一个格斗很弱的勇士
+        context = new Context(new WeakAbility());
+        context.getFightAbility();
+        context.eat();
+        context.run();
         // 普通对手
-        context = new Context(new CommonStrategy());
-        context.fight();
-        // 强对手
-        context = new Context(new StrongStrategy());
-        context.fight();
+        context = new Context(new CommonAbility());
+        context.getFightAbility();
+        // 强对手，动态设置，而不是通过构造方法
+        context.setFightAbility(new StrongAbility());
+        context.getFightAbility();
     }
 }

@@ -11,7 +11,7 @@ import java.util.function.Function;
 public class FunctionTest {
 
     /**
-     * 匿名内部类
+     * 匿名内部类方式实现 Function 接口
      */
     @Test
     public void testFunction() {
@@ -24,7 +24,7 @@ public class FunctionTest {
     }
 
     /**
-     * lambad 表达式
+     * lambda 表达式，实现 Function 接口
      */
     @Test
     public void testFunction2() {
@@ -33,6 +33,27 @@ public class FunctionTest {
         System.out.println(apply);
     }
 
+    /**
+     * andThen
+     */
     @Test
-    public
+    public void testAndThen() {
+        Function<Integer, Integer> fun = x -> x + 3;
+        Integer apply = fun.andThen(x -> x * 4).apply(2);
+        System.out.println(apply);
+    }
+
+    @Test
+    public void testCompose() {
+        Function<Integer, Integer> fun = x -> x * 3;
+        Integer apply = fun.compose(x -> (int) x + 2).apply(2);
+        System.out.println(apply);
+    }
+
+    @Test
+    public void testIdentity() {
+        Function<Object, Object> identity = Function.identity();
+        Object apply = identity.apply(3);
+        System.out.println(apply);
+    }
 }
