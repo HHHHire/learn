@@ -24,7 +24,8 @@ public class MyClient {
                 .handler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new StringEncoder());
+//                        ch.pipeline().addLast(new StringEncoder());
+                        ch.pipeline().addLast(new MyClientHandler());
                     }
                 })
                 // 连接，异步
@@ -34,10 +35,9 @@ public class MyClient {
                 // 获取channel对象
                 .channel();
         // 写入消息并清空缓存区
-        channel.writeAndFlush(new Date() + " : hello world!");
-        ChannelFuture channelFuture = channel.closeFuture();
+//        channel.writeAndFlush(new Date() + " : hello world!");
+        ChannelFuture channelFuture = channel.closeFuture().sync();
         channelFuture.addListener(new ChannelFutureListener() {
-            @Override
             public void operationComplete(ChannelFuture future) throws Exception {
                 System.out.println("关闭成功");
             }
