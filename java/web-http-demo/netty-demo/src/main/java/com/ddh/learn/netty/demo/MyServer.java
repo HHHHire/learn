@@ -47,6 +47,14 @@ public class MyServer {
         // 启动
         ChannelFuture channelFuture = serverBootstrap.bind(8888).sync();
 
+        channelFuture.addListener((ChannelFutureListener) future -> {
+            if (future.isSuccess()) {
+                System.out.println("绑定端口 8888 成功");
+            } else {
+                System.out.println("端口绑定失败");
+            }
+        });
+
         // 对关闭通道进行监听，对有关闭请求的通道进行关闭
         channelFuture.channel().closeFuture().sync();
     }
