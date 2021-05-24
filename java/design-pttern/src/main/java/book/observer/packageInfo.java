@@ -6,4 +6,7 @@ package book.observer;
  * @description:
  */
 public class packageInfo {
+    /**
+     * 观察者模式
+     */
 }

@@ -6,4 +6,9 @@ package book.decorator;
  * @description:
  */
 public class packageInfo {
+    /**
+     * 装饰者模式 饮料-调料
+     * 饮料被调料装饰，被包含
+     *
+     */
 }

@@ -6,4 +6,7 @@ package book.strategy;
  * @description:
  */
 public class packageInfo {
+    /**
+     * 策略模式
+     */
 }

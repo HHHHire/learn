@@ -6,4 +6,7 @@ package book;
  * @description:
  */
 public class packageInfo {
+    /**
+     * 这个包下都是根据《HEAD_FIRST设计模式》来学习的例子
+     */
 }
