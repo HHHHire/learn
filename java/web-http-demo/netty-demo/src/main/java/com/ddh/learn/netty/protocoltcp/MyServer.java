@@ -1,10 +1,7 @@
-package com.ddh.learn.netty.handler;
+package com.ddh.learn.netty.protocoltcp;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
@@ -32,20 +29,21 @@ public class MyServer {
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new MyByteToLongDecoder());
-                        ch.pipeline().addLast(new MyLongToByteEncoder());
-                        ch.pipeline().addLast(new MyServerHandler());
+                        ChannelPipeline pipeline = ch.pipeline();
+                        pipeline.addLast(new MyMessageEncoder());
+                        pipeline.addLast(new MyMessageDecoder());
+                        pipeline.addLast(new MyServerHandler());
 
                     }
                 });
         System.out.println("....服务器准备好了....");
         // 绑定一个端口并且同步，生成了一个channelFuture对象
         // 启动
-        ChannelFuture channelFuture = serverBootstrap.bind(8888).sync();
+        ChannelFuture channelFuture = serverBootstrap.bind(9999).sync();
 
         channelFuture.addListener((ChannelFutureListener) future -> {
             if (future.isSuccess()) {
-                System.out.println("绑定端口 8888 成功");
+                System.out.println("绑定端口 9999 成功");
             } else {
                 System.out.println("端口绑定失败");
             }

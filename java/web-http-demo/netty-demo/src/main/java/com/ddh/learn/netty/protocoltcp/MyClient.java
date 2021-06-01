@@ -1,10 +1,7 @@
-package com.ddh.learn.netty.handler;
+package com.ddh.learn.netty.protocoltcp;
 
 import io.netty.bootstrap.Bootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelInitializer;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
@@ -21,13 +18,14 @@ public class MyClient {
                 .handler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-                        ch.pipeline().addLast(new MyByteToLongDecoder());
-                        ch.pipeline().addLast(new MyLongToByteEncoder());
-                        ch.pipeline().addLast(new MyClientHandler());
+                        ChannelPipeline pipeline = ch.pipeline();
+                        pipeline.addLast(new MyMessageEncoder());
+                        pipeline.addLast(new MyMessageDecoder());
+                        pipeline.addLast(new MyClientHandler());
                     }
                 })
                 // 连接，异步
-                .connect("127.0.0.1", 8888)
+                .connect("127.0.0.1", 9999)
                 // 这里使用同步等待
                 .sync()
                 // 获取channel对象
