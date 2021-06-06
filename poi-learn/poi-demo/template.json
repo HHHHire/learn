@@ -1,0 +1,445 @@
+{
+  "name": "规划条件核提测试1",
+  "time": "2021/06/02",
+  "id": "79deb5e2-e4b2-4030-c34c-5bfc0a82554f",
+  "data": [
+    {
+      "DKBH": { "Value": "A-02", "Name": "DKBH", "Desc": "地块编号" },
+      "YDGHLX": {
+        "Value": "住宅用地",
+        "Name": "TYPE_1",
+        "Desc": "规划用地类型"
+      },
+      "YDGHLXDM": {
+        "Value": "R21",
+        "Name": "FCODE",
+        "Desc": "规划用地类型代码"
+      },
+      "RJL": { "Value": 10, "Name": "RJL", "Desc": "容积率" },
+      "JZMD": { "Value": 20, "Name": "JZMD", "Desc": "建筑密度" },
+      "JZXG": { "Value": 30, "Name": "JZXG", "Desc": "建筑限高" },
+      "LDL": { "Value": 80, "Name": "LVL", "Desc": "绿地率" },
+      "YDMJ": { "Value": 5200, "Name": "YDMJ", "Desc": "用地面积" },
+      "Attributes": [
+        { "name": "508", "title": "SmID", "field": "SmID", "type": "INT32" },
+        {
+          "name": "0",
+          "title": "SmUserID",
+          "field": "SmUserID",
+          "type": "INT32"
+        },
+        {
+          "name": "106871.82094095487",
+          "title": "SmArea",
+          "field": "SmArea",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "1327.051196002568",
+          "title": "SmPerimeter",
+          "field": "SmPerimeter",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "",
+          "title": "SmGeometry",
+          "field": "SmGeometry",
+          "type": "LONGBINARY"
+        },
+        {
+          "name": "",
+          "title": "规划用地名称",
+          "field": "NAME",
+          "type": "WTEXT"
+        },
+        {
+          "name": "A-02",
+          "title": "地块编号",
+          "field": "DKBH",
+          "type": "WTEXT"
+        },
+        { "name": "", "title": "类型", "field": "LX", "type": "WTEXT" },
+        {
+          "name": "R21",
+          "title": "规划用地类型代码",
+          "field": "FCODE",
+          "type": "WTEXT"
+        },
+        {
+          "name": "住宅用地",
+          "title": "规划用地类型",
+          "field": "TYPE_1",
+          "type": "WTEXT"
+        },
+        {
+          "name": "R21/住宅用地",
+          "title": "规划用地类型代码和名称",
+          "field": "GHDMHLX",
+          "type": "WTEXT"
+        },
+        {
+          "name": "5200",
+          "title": "用地面积",
+          "field": "YDMJ",
+          "type": "WTEXT"
+        },
+        { "name": "——", "title": "建筑密度", "field": "JZMD", "type": "WTEXT" },
+        { "name": "", "title": "容积率", "field": "RJL", "type": "WTEXT" },
+        { "name": "", "title": "建筑容量", "field": "JZRL", "type": "WTEXT" },
+        { "name": "——", "title": "建筑限高", "field": "JZXG", "type": "WTEXT" },
+        { "name": "80", "title": "绿地率", "field": "LVL", "type": "WTEXT" },
+        {
+          "name": "——/——",
+          "title": "停车泊位",
+          "field": "TCBW",
+          "type": "WTEXT"
+        },
+        {
+          "name": "",
+          "title": "出入口方向",
+          "field": "CRKFX",
+          "type": "WTEXT"
+        },
+        {
+          "name": "",
+          "title": "附建配套设施",
+          "field": "FJPTSS",
+          "type": "WTEXT"
+        },
+        { "name": "", "title": "规划户数", "field": "GHHS", "type": "WTEXT" },
+        { "name": "", "title": "规划人口", "field": "GHRK", "type": "WTEXT" },
+        { "name": "", "title": "地块标高", "field": "DKBG", "type": "WTEXT" },
+        { "name": "", "title": "备注", "field": "BZ", "type": "WTEXT" },
+        {
+          "name": "2016/06/23 00:00:00",
+          "title": "创建日期",
+          "field": "CJRQ",
+          "type": "DATETIME"
+        },
+        {
+          "name": "飞云中心区单元",
+          "title": "所属控规单元",
+          "field": "SSDY",
+          "type": "WTEXT"
+        },
+        { "name": "", "title": "批准文号", "field": "PZWH", "type": "WTEXT" },
+        { "name": "", "title": "项目名称", "field": "XMMC", "type": "WTEXT" },
+        {
+          "name": "1327.11076977",
+          "title": "SHAPE_Leng",
+          "field": "SHAPE_Leng",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "106880.693116",
+          "title": "SHAPE_Area",
+          "field": "SHAPE_Area",
+          "type": "DOUBLE"
+        }
+      ]
+    },
+    {
+      "DKBH": { "Value": "A-21", "Name": "DKBH", "Desc": "地块编号" },
+      "YDGHLX": {
+        "Value": "住宅用地",
+        "Name": "TYPE_1",
+        "Desc": "规划用地类型"
+      },
+      "YDGHLXDM": {
+        "Value": "R21",
+        "Name": "FCODE",
+        "Desc": "规划用地类型代码"
+      },
+      "RJL": { "Value": 1.5, "Name": "RJL", "Desc": "容积率" },
+      "JZMD": { "Value": 32, "Name": "JZMD", "Desc": "建筑密度" },
+      "JZXG": { "Value": 24, "Name": "JZXG", "Desc": "建筑限高" },
+      "LDL": { "Value": 30, "Name": "LVL", "Desc": "绿地率" },
+      "YDMJ": { "Value": 6.76, "Name": "YDMJ", "Desc": "用地面积" },
+      "Attributes": [
+        { "name": "513", "title": "SmID", "field": "SmID", "type": "INT32" },
+        {
+          "name": "0",
+          "title": "SmUserID",
+          "field": "SmUserID",
+          "type": "INT32"
+        },
+        {
+          "name": "67585.56088683635",
+          "title": "SmArea",
+          "field": "SmArea",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "1050.5294101340235",
+          "title": "SmPerimeter",
+          "field": "SmPerimeter",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "",
+          "title": "SmGeometry",
+          "field": "SmGeometry",
+          "type": "LONGBINARY"
+        },
+        {
+          "name": "",
+          "title": "规划用地名称",
+          "field": "NAME",
+          "type": "WTEXT"
+        },
+        {
+          "name": "A-21",
+          "title": "地块编号",
+          "field": "DKBH",
+          "type": "WTEXT"
+        },
+        { "name": "", "title": "类型", "field": "LX", "type": "WTEXT" },
+        {
+          "name": "R21",
+          "title": "规划用地类型代码",
+          "field": "FCODE",
+          "type": "WTEXT"
+        },
+        {
+          "name": "住宅用地",
+          "title": "规划用地类型",
+          "field": "TYPE_1",
+          "type": "WTEXT"
+        },
+        {
+          "name": "R21/住宅用地",
+          "title": "规划用地类型代码和名称",
+          "field": "GHDMHLX",
+          "type": "WTEXT"
+        },
+        {
+          "name": "6.76",
+          "title": "用地面积",
+          "field": "YDMJ",
+          "type": "WTEXT"
+        },
+        { "name": "32", "title": "建筑密度", "field": "JZMD", "type": "WTEXT" },
+        { "name": "1.5", "title": "容积率", "field": "RJL", "type": "WTEXT" },
+        {
+          "name": "101400",
+          "title": "建筑容量",
+          "field": "JZRL",
+          "type": "WTEXT"
+        },
+        { "name": "24", "title": "建筑限高", "field": "JZXG", "type": "WTEXT" },
+        { "name": "30", "title": "绿地率", "field": "LVL", "type": "WTEXT" },
+        {
+          "name": "——/——",
+          "title": "停车泊位",
+          "field": "TCBW",
+          "type": "WTEXT"
+        },
+        {
+          "name": "",
+          "title": "出入口方向",
+          "field": "CRKFX",
+          "type": "WTEXT"
+        },
+        {
+          "name": "",
+          "title": "附建配套设施",
+          "field": "FJPTSS",
+          "type": "WTEXT"
+        },
+        { "name": "0", "title": "规划户数", "field": "GHHS", "type": "WTEXT" },
+        { "name": "0", "title": "规划人口", "field": "GHRK", "type": "WTEXT" },
+        { "name": "", "title": "地块标高", "field": "DKBG", "type": "WTEXT" },
+        { "name": "", "title": "备注", "field": "BZ", "type": "WTEXT" },
+        {
+          "name": "2016/06/23 00:00:00",
+          "title": "创建日期",
+          "field": "CJRQ",
+          "type": "DATETIME"
+        },
+        {
+          "name": "飞云中心区单元",
+          "title": "所属控规单元",
+          "field": "SSDY",
+          "type": "WTEXT"
+        },
+        { "name": "", "title": "批准文号", "field": "PZWH", "type": "WTEXT" },
+        { "name": "", "title": "项目名称", "field": "XMMC", "type": "WTEXT" },
+        {
+          "name": "1050.57594997",
+          "title": "SHAPE_Leng",
+          "field": "SHAPE_Leng",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "67591.2282244",
+          "title": "SHAPE_Area",
+          "field": "SHAPE_Area",
+          "type": "DOUBLE"
+        }
+      ]
+    }
+  ],
+  "info": {
+    "XZQW": {
+      "Name": "行政区位",
+      "UpDateInfo": "南部组团飞云片区",
+      "LastInfo": "",
+      "DefaultInfo": "如：XX街道XX单元、XX组团XX片区",
+      "UIInfo": ""
+    },
+    "GDFS": {
+      "Name": "供地方式",
+      "UpDateInfo": "出让",
+      "LastInfo": "",
+      "DefaultInfo": "出让",
+      "UIInfo": ""
+    },
+    "PZWH": {
+      "Name": "批准文号",
+      "UpDateInfo": "瑞规条字〔2021〕X号",
+      "LastInfo": "",
+      "DefaultInfo": "瑞规条字〔2021〕X号",
+      "UIInfo": ""
+    },
+    "GHYJ": {
+      "Name": "规划依据",
+      "UpDateInfo": "《瑞安市XX控制性详细规划修改》（批准文号）、《瑞安市城市规划建设管理技术规定》（2020版）和《瑞安市XX地块规划条件论证报告》（批准文号） ",
+      "LastInfo": "",
+      "DefaultInfo": "《瑞安市XX控制性详细规划修改》（批准文号）、《瑞安市城市规划建设管理技术规定》（2020版）和《瑞安市XX地块规划条件论证报告》（批准文号） ",
+      "UIInfo": ""
+    },
+    "FJRQ": {
+      "Name": "发件日期",
+      "UpDateInfo": "XXXX年XX月XX日",
+      "LastInfo": "",
+      "DefaultInfo": "XXXX年XX月XX日",
+      "UIInfo": ""
+    },
+    "YDWZFW": {
+      "Name": "用地位置、范围",
+      "UpDateInfo": "项目位于XXXX，地块编号XX（详见附图一、附图二）。 ",
+      "LastInfo": "",
+      "DefaultInfo": "项目位于XXXX，地块编号XX（详见附图一、附图二）。 ",
+      "UIInfo": ""
+    },
+    "JSYDKZGC": {
+      "Name": "建设用地控制高程",
+      "UpDateInfo": "A-02地块：85高程Xm、A-21地块：85高程Xm",
+      "LastInfo": "",
+      "DefaultInfo": "A-02地块：85高程Xm、A-21地块：85高程Xm",
+      "UIInfo": ""
+    },
+    "JZSYGN": {
+      "Name": "建筑使用功能",
+      "UpDateInfo": "EST",
+      "LastInfo": "",
+      "DefaultInfo": "",
+      "UIInfo": ""
+    },
+    "DXKJYQ": {
+      "Name": "地下空间要求",
+      "UpDateInfo": "在水平面上垂直投影占地范围、起止深度、规划用途、建筑面积在下一步建设工程设计方案中确定，具体按《瑞安市地下空间建设用地管理和土地登记规定（试行）的通知》（瑞政办〔2010〕161号）有关规定执行。",
+      "LastInfo": "",
+      "DefaultInfo": "在水平面上垂直投影占地范围、起止深度、规划用途、建筑面积在下一步建设工程设计方案中确定，具体按《瑞安市地下空间建设用地管理和土地登记规定（试行）的通知》（瑞政办〔2010〕161号）有关规定执行。",
+      "UIInfo": ""
+    },
+    "JZWGZWHDXJZTRJL": {
+      "Name": "建筑物、构筑物（含地下建筑）退让距离",
+      "UpDateInfo": "1、退让规划建设用地界线、规划道路红线距离：应符合《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）的相关规定要求。\n2、建筑间距：用地范围内建筑间距及与周边建筑间距应符合《瑞安市城市规划建设管理技术规定》（2020版）要求，同时应符合相关的法律法规、国家强制性技术标准和技术规范等规定。",
+      "LastInfo": "",
+      "DefaultInfo": "1、退让规划建设用地界线、规划道路红线距离：应符合《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）的相关规定要求。\n2、建筑间距：用地范围内建筑间距及与周边建筑间距应符合《瑞安市城市规划建设管理技术规定》（2020版）要求，同时应符合相关的法律法规、国家强制性技术标准和技术规范等规定。",
+      "UIInfo": ""
+    },
+    "SSSJ": {
+      "Name": "竖向设计",
+      "UpDateInfo": "竖向室内外高差0.15-0.45m",
+      "LastInfo": "",
+      "DefaultInfo": "竖向室内外高差0.15-0.45m",
+      "UIInfo": ""
+    },
+    "SSSJJJZJWLMGL": {
+      "Name": "城市设计及建筑外立面管理",
+      "UpDateInfo": "1、城市设计应符合《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）的要求，拟建建筑外立面管理根据《瑞安市城市（镇）建筑外立面规划建设管理办法（试行）》（瑞政办〔2017〕232号）执行。",
+      "LastInfo": "",
+      "DefaultInfo": "1、城市设计应符合《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）的要求，拟建建筑外立面管理根据《瑞安市城市（镇）建筑外立面规划建设管理办法（试行）》（瑞政办〔2017〕232号）执行。",
+      "UIInfo": ""
+    },
+    "ZYCRKFW": {
+      "Name": "主要出入口方位",
+      "UpDateInfo": "1、机动车出入口：XX。\n2、行人出入口：XX。",
+      "LastInfo": "",
+      "DefaultInfo": "1、机动车出入口：XX。\n2、行人出入口：XX。",
+      "UIInfo": ""
+    },
+    "TCWPZYQ": {
+      "Name": "停车位配置要求",
+      "UpDateInfo": "应符合《瑞安市XX控制性详细规划修改》（批准文号）、《瑞安市城市规划建设管理技术规定》（2020版）、《浙江省城市建筑工程停车场（库）设置规划和配建标准》（DB33/1021-2013）配建标准要求，按照标准就高不就低执行。",
+      "LastInfo": "",
+      "DefaultInfo": "应符合《瑞安市XX控制性详细规划修改》（批准文号）、《瑞安市城市规划建设管理技术规定》（2020版）、《浙江省城市建筑工程停车场（库）设置规划和配建标准》（DB33/1021-2013）配建标准要求，按照标准就高不就低执行。",
+      "UIInfo": ""
+    },
+    "QT": {
+      "Name": "其他",
+      "UpDateInfo": "公共自行车配建指标按相关规定配置公共自行车停放点，具体规模及位置在方案阶段予以确定。配建的公共自行车位可以按1:3折抵地块需配设的非机动车位，折抵比例不超过应配设数的30%。\n电动汽车充电基础设施按国家、省级相关规定进行配置。 ",
+      "LastInfo": "",
+      "DefaultInfo": "公共自行车配建指标按相关规定配置公共自行车停放点，具体规模及位置在方案阶段予以确定。配建的公共自行车位可以按1:3折抵地块需配设的非机动车位，折抵比例不超过应配设数的30%。\n电动汽车充电基础设施按国家、省级相关规定进行配置。 ",
+      "UIInfo": ""
+    },
+    "SZSSGHYQ": {
+      "Name": "市政设施规划要求",
+      "UpDateInfo": "关于给水、供电、通讯、燃气、雨水、污水等工程管网管线和设施应按《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）要求敷设，同时与现有设施做好衔接。",
+      "LastInfo": "",
+      "DefaultInfo": "关于给水、供电、通讯、燃气、雨水、污水等工程管网管线和设施应按《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市城市规划建设管理技术规定》（2020版）要求敷设，同时与现有设施做好衔接。",
+      "UIInfo": ""
+    },
+    "GGPTSSGHYQ": {
+      "Name": "公共配套设施规划要求",
+      "UpDateInfo": "（一）项目配套的内容、规模和位置按《瑞安市XX控制性详细规划修改）》（批准文号）和《城市居住区规划设计标准》（GB50180-2018）要求配建。本项目公共配套设施主要包括物业管理用房、居家养老服务用房、公共文化体育活动用房和配电房等内容。\n（二）根据《浙江省城镇居家养老服务设施规划配建标准》配建居家养老服务设施。\n（三）根据《浙江省物业管理条例》规定配置物业管理用房。\n（四）公共文化设施配套根据《浙江省居民住宅区公共文化设施配套建设标准》（建规发〔2018〕349号）实施。\n（五）按《瑞安市加强母婴设施建设实施方案》设置母婴设施。",
+      "LastInfo": "",
+      "DefaultInfo": "（一）项目配套的内容、规模和位置按《瑞安市XX控制性详细规划修改）》（批准文号）和《城市居住区规划设计标准》（GB50180-2018）要求配建。本项目公共配套设施主要包括物业管理用房、居家养老服务用房、公共文化体育活动用房和配电房等内容。\n（二）根据《浙江省城镇居家养老服务设施规划配建标准》配建居家养老服务设施。\n（三）根据《浙江省物业管理条例》规定配置物业管理用房。\n（四）公共文化设施配套根据《浙江省居民住宅区公共文化设施配套建设标准》（建规发〔2018〕349号）实施。\n（五）按《瑞安市加强母婴设施建设实施方案》设置母婴设施。",
+      "UIInfo": ""
+    },
+    "RF": {
+      "Name": "人防",
+      "UpDateInfo": " 根据《浙江省实施<中华人民共和国人民防空法>办法》，新建住宅及其配套按地面总建筑面积8%，其余部分按5%比例修建甲类核六级常六级防化丙级的人防地下室。",
+      "LastInfo": "",
+      "DefaultInfo": " 根据《浙江省实施<中华人民共和国人民防空法>办法》，新建住宅及其配套按地面总建筑面积8%，其余部分按5%比例修建甲类核六级常六级防化丙级的人防地下室。",
+      "UIInfo": ""
+    },
+    "HMCSGHYQ": {
+      "Name": "“海绵城市”规划要求",
+      "UpDateInfo": "参照《温州市海绵城市工程设计规定》（温住建发〔2015〕307号）、《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市XX地块规划条件论证》（批准文号）执行。 ",
+      "LastInfo": "",
+      "DefaultInfo": "参照《温州市海绵城市工程设计规定》（温住建发〔2015〕307号）、《瑞安市XX控制性详细规划修改》（批准文号）和《瑞安市XX地块规划条件论证》（批准文号）执行。 ",
+      "UIInfo": ""
+    },
+    "LSJZYQ": {
+      "Name": "绿色建筑要求",
+      "UpDateInfo": "根据《瑞安市绿色建筑专项规划》（瑞政发〔2017〕110号）和《关于要求明确我市绿色建筑相关问题的请示》（瑞住建发〔2019〕125号）文件要求执行。 ",
+      "LastInfo": "",
+      "DefaultInfo": "根据《瑞安市绿色建筑专项规划》（瑞政发〔2017〕110号）和《关于要求明确我市绿色建筑相关问题的请示》（瑞住建发〔2019〕125号）文件要求执行。 ",
+      "UIInfo": ""
+    },
+    "DLXGYQ": {
+      "Name": "代理相关要求",
+      "UpDateInfo": "TEST",
+      "LastInfo": "",
+      "DefaultInfo": "",
+      "UIInfo": ""
+    },
+    "QTGHYQ": {
+      "Name": "其他规划要求",
+      "UpDateInfo": "（一）应满足环保、消防、人防、园林、交通、文物、保密、通讯、水利（河湖）、市政、教育、体育等各项法规、规章、规范规定的要求，并按有关规定报相关行政主管部门审查批准。\n（二）为保留建筑预留消防通道。（三）项目中涉及面积计算规则允许误差值按照《建筑工程建筑面积计算和竣工综合测量技术规程》（DB33/T1152-2018）和《建筑工程建筑面积计算和竣工综合测量技术补充规定》（浙自然资发〔2019〕34号）要求执行。\n（四）本条件书自发出之日起一年内, 未取得国有建设用地使用权出让合同的，可以在期限届满前三十日内向原核发机关申请办理延期手续；逾期未申请延续或申请延续申请未获批准的，规划条件失效。 ",
+      "LastInfo": "",
+      "DefaultInfo": "（一）应满足环保、消防、人防、园林、交通、文物、保密、通讯、水利（河湖）、市政、教育、体育等各项法规、规章、规范规定的要求，并按有关规定报相关行政主管部门审查批准。\n（二）为保留建筑预留消防通道。（三）项目中涉及面积计算规则允许误差值按照《建筑工程建筑面积计算和竣工综合测量技术规程》（DB33/T1152-2018）和《建筑工程建筑面积计算和竣工综合测量技术补充规定》（浙自然资发〔2019〕34号）要求执行。\n（四）本条件书自发出之日起一年内, 未取得国有建设用地使用权出让合同的，可以在期限届满前三十日内向原核发机关申请办理延期手续；逾期未申请延续或申请延续申请未获批准的，规划条件失效。 ",
+      "UIInfo": ""
+    },
+    "FT": {
+      "Name": "附图",
+      "UpDateInfo": "（一）选址用地红线图\n    （二）控规分幅图",
+      "LastInfo": "",
+      "DefaultInfo": "（一）选址用地红线图\n（二）控规分幅图",
+      "UIInfo": ""
+    }
+  }
+}

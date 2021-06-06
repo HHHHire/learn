@@ -79,11 +79,15 @@ public class TagTest {
     public void ListTest() throws Exception {
         Map<String, Object> map = new HashMap<>();
 //        map.put("list", Numberings.create("一、", "二、", "三、"));
-        Numberings.NumberingBuilder numberingBuilder = Numberings.ofDecimal();
-        String[] array = {"一、", "二、", "三、"};
-        Arrays.stream(array).forEach(numberingBuilder::addItem);
-        NumberingRenderData numberingRenderData = numberingBuilder.create();
-        map.put("list", numberingRenderData);
+//        Numberings.NumberingBuilder numberingBuilder = Numberings.ofDecimal();
+////        String[] array = {"一、", "二、", "三、"};
+////        Arrays.stream(array).forEach(numberingBuilder::addItem);
+////        NumberingRenderData numberingRenderData = numberingBuilder.create();
+////        map.put("list", numberingRenderData);
+        List<String> list = Arrays.asList("first", "second", "third");
+        map.put("list", Numberings.create("Plug-in grammar",
+                "Supports word text, pictures, table...",
+                "Not just templates"));
 
         XWPFTemplate.compile("test.docx").render(map).writeAndClose(new FileOutputStream("output.docx"));
     }
