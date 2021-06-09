@@ -1,12 +1,16 @@
 package com.ddh.learn.poi;
 
 import com.ddh.learn.poi.base.DetailTablePolicy;
+import com.ddh.learn.poi.policy.MyTextRenderPolicy;
 import com.deepoove.poi.XWPFTemplate;
 import com.deepoove.poi.config.Configure;
 import com.deepoove.poi.data.*;
 import com.deepoove.poi.data.style.Style;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.junit.Test;
 
 import java.io.FileOutputStream;
@@ -15,16 +19,45 @@ import java.util.*;
 /**
  * @author: dengdh@dist.com.cn
  * @date: 2021/5/19 10:37
- * @description: 标签测试
+ * @description: 标签测试，文本换行问题
  */
 public class TagTest {
     @Test
     public void test1() throws Exception {
-        XWPFTemplate.compile("test.docx").render(
+        Configure configure = Configure.builder().bind("list_test", new MyTextRenderPolicy()).build();
+        XWPFTemplate.compile("test.docx", configure).render(
                 new HashMap<String, Object>() {{
-                    put("author", new TextRenderData("\nzhangsan", new Style("000000")));
+//                    put("author", new TextRenderData("\nzhangsan", new Style("000000")));
+                    put("list_test", Paragraphs.of()
+                            .addParagraph(Paragraphs.of("zhangsan").create())
+                            .addParagraph(Paragraphs.of("lisi").create()).create());
                 }}
         ).writeAndClose(new FileOutputStream("output.docx"));
+
+        XWPFDocument xwpfDocument = new XWPFDocument();
+        XWPFParagraph paragraph = xwpfDocument.createParagraph();
+        XWPFRun run = paragraph.createRun();
+        paragraph.removeRun(1);
+    }
+
+    @Test
+    public void test2() throws Exception {
+        FileOutputStream outputStream = new FileOutputStream("output.docx");
+        XWPFDocument document = new XWPFDocument();
+        XWPFParagraph paragraph = document.createParagraph();
+        XWPFRun run1 = paragraph.createRun();
+        run1.addTab();
+        run1.setText("1aaaaaaaaaaaaaaaaaaaaaaaaaa");
+        run1.setItalic(true);
+        run1.setBold(true);
+        run1.addBreak();
+
+        XWPFRun run2 = paragraph.createRun();
+        run2.setText("2bbbbbbbb");
+//        run2.setTextPosition(10);
+
+        document.write(outputStream);
+        outputStream.close();
     }
 
     /**
@@ -89,6 +122,9 @@ public class TagTest {
                 "Supports word text, pictures, table...",
                 "Not just templates"));
 
+        Numberings.NumberingBuilder of = Numberings.of(NumberingFormat.BULLET);
+        Arrays.asList("", "").forEach(of::addItem);
+
         XWPFTemplate.compile("test.docx").render(map).writeAndClose(new FileOutputStream("output.docx"));
     }
 
@@ -146,6 +182,7 @@ public class TagTest {
 
     /**
      * 动态表格
+     *
      * @throws Exception
      */
     @Test
