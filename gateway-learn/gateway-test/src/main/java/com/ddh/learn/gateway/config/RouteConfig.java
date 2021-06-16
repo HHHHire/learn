@@ -22,7 +22,9 @@ public class RouteConfig {
     public RouteLocator getRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("path_route", r -> r.path("/product/**")
-                        .uri("http://localhost:8502").filter(new TestFilter()))
+                        .uri("http://localhost:8502")
+                        .filter(new TestFilter())
+                )
                 .build();
     }
 }

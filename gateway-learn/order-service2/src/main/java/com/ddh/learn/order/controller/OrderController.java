@@ -1,8 +1,6 @@
 package com.ddh.learn.order.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 /**
@@ -13,7 +11,12 @@ import reactor.core.publisher.Mono;
 public class OrderController {
 
     @GetMapping("/order/{id}")
-    public Mono<String> getOrder(@PathVariable("id") Long id) {
-        return Mono.just("hello order service2");
+    public String getOrder(@PathVariable("id") Long id) {
+        return "hello order service2";
+    }
+
+    @PostMapping("/order")
+    public String postOrder(@RequestParam String name, @RequestParam Long id) {
+        return name;
     }
 }

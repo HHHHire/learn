@@ -20,7 +20,7 @@ spring:
 #          predicates:
 #            - Path=/product/**
         - id: order-service
-          uri: http://127.0.0.1:8501
+          uri: http://127.0.0.1:8503
           predicates:
             - Path=/order/**
 #            - name: My
@@ -28,4 +28,4 @@ spring:
 #                sources: zhangsan
           filters:
             - Pre=hello
-
+            - EventArg=default
