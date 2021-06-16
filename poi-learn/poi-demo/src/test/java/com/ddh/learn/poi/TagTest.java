@@ -14,6 +14,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.junit.Test;
 
 import java.io.FileOutputStream;
+import java.net.URLEncoder;
 import java.util.*;
 
 /**
@@ -193,6 +194,16 @@ public class TagTest {
                     put("table_title", null);
                 }}
         ).writeAndClose(new FileOutputStream("output.docx"));
+    }
+
+    @Test
+    public void test3() throws Exception {
+        System.out.println(URLEncoder.encode(" hi还", "UTF-8").replaceAll("\\+", "%20"));
+    }
+
+    @Test
+    public void test4() {
+
     }
 
 }
