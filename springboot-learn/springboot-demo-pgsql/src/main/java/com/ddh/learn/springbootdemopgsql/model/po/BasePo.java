@@ -1,6 +1,4 @@
-package com.ddh.learn.springbootdemopgsql.model;
-
-import com.ddh.learn.springbootdemopgsql.model.test.Identifiable;
+package com.ddh.learn.springbootdemopgsql.model.po;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,7 +14,7 @@ import java.io.Serializable;
 @MappedSuperclass
 public class BasePo implements Identifiable, Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
     @Override

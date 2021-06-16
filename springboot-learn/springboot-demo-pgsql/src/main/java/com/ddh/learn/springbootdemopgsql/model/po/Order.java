@@ -1,6 +1,6 @@
-package com.ddh.learn.springbootdemopgsql.model.test;
+package com.ddh.learn.springbootdemopgsql.model.po;
 
-import com.ddh.learn.springbootdemopgsql.model.BasePo;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -13,6 +13,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Data
+@Builder
 @Table(name = "z_order")
 public class Order extends BasePo {
     private String username;

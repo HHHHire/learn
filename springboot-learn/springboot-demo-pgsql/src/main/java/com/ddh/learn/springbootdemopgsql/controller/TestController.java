@@ -67,7 +67,7 @@ public class TestController {
             }
         });
 //        countDownLatch.await();
-//        System.out.println("test");
+//        System.out.println("po");
         try{
             lock.lock();
             System.out.println("main 当前线程名: " + Thread.currentThread().getName() + ", 变量为: " + str);

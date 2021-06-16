@@ -3,9 +3,13 @@ spring:
   datasource:
     username: postgres
     password: 123456
-    url: jdbc:postgresql://47.100.88.162:5432/demo
+    url: jdbc:postgresql://47.100.88.162:5432/demo?searchpath=me
   jpa:
     hibernate:
       ddl-auto: update
+  mvc:
+    view:
+      suffix: .html
+      prefix: classpath:/templates/
 server:
   port: 8077

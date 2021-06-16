@@ -1,4 +1,4 @@
-package com.ddh.learn.springbootdemopgsql.model.test;
+package com.ddh.learn.springbootdemopgsql.model.po;
 
 /**
  * @author: dengdh@dist.com.cn
