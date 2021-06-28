@@ -9,14 +9,18 @@ package singleton.lazy;
  * 缺点：必须加锁 synchronized 才能保证单例，但加锁会影响效率
  **/
 public class SingletonLazy {
-    private static SingletonLazy singletonLazy = null;
+    private volatile static SingletonLazy singletonLazy = null;
 
     private SingletonLazy() {
     }
 
-    public static synchronized SingletonLazy getInstance() {
+    public static SingletonLazy getInstance() {
         if (singletonLazy == null) {
-            singletonLazy = new SingletonLazy();
+            synchronized (SingletonLazy.class) {
+                if (singletonLazy == null) {
+                    singletonLazy = new SingletonLazy();
+                }
+            }
         }
         return singletonLazy;
     }
